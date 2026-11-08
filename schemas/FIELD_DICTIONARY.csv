@@ -1,0 +1,1169 @@
+file_family,field,unit,description
+data/processed/config/ati_imu_alignment.csv,ati_counter_host_abs_resid_p95_ms,ms,Time or time residual in the coordinate indicated by the field name
+data/processed/config/ati_imu_alignment.csv,ati_counter_to_host_intercept_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/ati_imu_alignment.csv,ati_counter_to_host_receive_scale,s/s,Saved software clock scale; no refitting in this release
+data/processed/config/ati_imu_alignment.csv,cohort,category,Current recording-cohort label; no historical-cohort data included
+data/processed/config/ati_imu_alignment.csv,first_imu_minus_ati_host_receive_ms,ms,Time or time residual in the coordinate indicated by the field name
+data/processed/config/ati_imu_alignment.csv,host_receive_skew_is_sample_skew,boolean,False: receipt-time skew is not calibrated sampling-time skew
+data/processed/config/ati_imu_alignment.csv,imu_batch_median_abs_resid_median_ms,ms,Time or time residual in the coordinate indicated by the field name
+data/processed/config/ati_imu_alignment.csv,imu_device_to_host_intercept_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/ati_imu_alignment.csv,imu_device_to_host_receive_scale,s/s,Saved software clock scale; no refitting in this release
+data/processed/config/ati_imu_alignment.csv,imu_frames_per_receive_timestamp_median,count,Median number of samples sharing a software receipt timestamp
+data/processed/config/ati_imu_alignment.csv,imu_sample_receive_abs_resid_p95_ms,ms,Time or time residual in the coordinate indicated by the field name
+data/processed/config/ati_imu_alignment.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/processed/config/ati_imu_alignment.csv,same_linux_monotonic_capture_window,boolean,Both streams recorded against the same software monotonic chronology
+data/processed/config/ati_imu_alignment.csv,sample_epoch_phase_calibrated,boolean,False: no calibrated absolute sample phase
+data/processed/config/imu_axis_fit_runs.csv,device_end_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/imu_axis_fit_runs.csv,device_start_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/imu_axis_fit_runs.csv,host_end_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/imu_axis_fit_runs.csv,host_start_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/imu_axis_fit_runs.csv,n_samples,count,Number of objects named by this field; not an independent participant count
+data/processed/config/imu_axis_fit_runs.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/processed/config/imu_axis_fit_runs.csv,run,index,Index at the file-specific native/run/cycle/batch level
+data/processed/config/imu_axis_fit_runs.csv,training,boolean,"Original configuration/calibration flag, retained without reinterpretation"
+data/processed/config/imu_axis_fit_runs.csv,weight_across_training_records,dimensionless,Actual within-record run or across-fitting-record weight
+data/processed/config/imu_axis_fit_runs.csv,weight_within_record,dimensionless,Actual within-record run or across-fitting-record weight
+data/processed/config/imu_detector.json,accepted_adjacent_interval_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/imu_detector.json,acf_search_lag_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/imu_detector.json,cycle_anchor,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/config/imu_detector.json,filter,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/config/imu_detector.json,heldout_records,identifier list,"Public IDs of fit or held-out records, respectively"
+data/processed/config/imu_detector.json,minimum_event_spacing_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/imu_detector.json,note,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/config/imu_detector.json,pca_axis_sign,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/config/imu_detector.json,pca_axis_xyz,dimensionless,Unit principal-axis loading in the specified XYZ frame
+data/processed/config/imu_detector.json,peak_prominence_within_record_sd,dimensionless,IMU prominence multiplier of within-run filtered projection SD
+data/processed/config/imu_detector.json,reference_lag_median_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/imu_detector.json,training_acf_lags_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/imu_detector.json,training_records,identifier list,"Public IDs of fit or held-out records, respectively"
+data/processed/config/optical_clock_models.json,{record_id}.alpha,s/s,Frozen optical-to-host software time scale
+data/processed/config/optical_clock_models.json,{record_id}.anchor_centers_optical_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/optical_clock_models.json,{record_id}.anchor_host_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/optical_clock_models.json,{record_id}.anchor_max_residual_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/optical_clock_models.json,{record_id}.anchor_span_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/optical_clock_models.json,{record_id}.anchors,count,Number of saved aggregate optical/host correspondence anchors
+data/processed/config/optical_clock_models.json,{record_id}.beta,s,Frozen optical-to-host software time offset
+data/processed/config/optical_clock_models.json,{record_id}.leave_anchor_out_max_error_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/optical_clock_models.json,{record_id}.method,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/config/optical_clock_models.json,{record_id}.physical_sample_latency_verified,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/config/optical_clock_models.json,{record_id}.whole_record_motion_validation_passed,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/config/optical_cycle_parameters.json,PCA_fit_unit,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/config/optical_cycle_parameters.json,actual_period_max_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/optical_cycle_parameters.json,actual_period_min_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/optical_cycle_parameters.json,axis_polarity,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/config/optical_cycle_parameters.json,axis_polarity_minimum_abs_Y_for_support,dimensionless,Saved minimum absolute Y loading for polarity support: 0.2
+data/processed/config/optical_cycle_parameters.json,early_middle_late_axis_review_degrees,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/config/optical_cycle_parameters.json,event_interpretation,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/config/optical_cycle_parameters.json,interpolation,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/config/optical_cycle_parameters.json,maximum_native_gap_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/optical_cycle_parameters.json,minimum_peak_distance_native_frames,frame count,Optical same-sign peak minimum spacing: 20 native frames
+data/processed/config/optical_cycle_parameters.json,phase_points,count,Number of cycle-progress samples: 101
+data/processed/config/optical_cycle_parameters.json,prominence,rule,Saved peak-prominence rule stated by its string value
+data/processed/config/optical_cycle_parameters.json,signal,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/config/optical_cycle_parameters.json,version,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/config/recording_time_origins.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/processed/config/recording_time_origins.csv,requested_start_monotonic_ns,ns,Original timestamp in the named monotonic/Unix clock (see time definitions)
+data/processed/config/recording_time_origins.csv,requested_start_unix_ns,ns,Original timestamp in the named monotonic/Unix clock (see time definitions)
+data/processed/config/recording_time_origins.csv,start_monotonic_ns,ns,Original timestamp in the named monotonic/Unix clock (see time definitions)
+data/processed/config/recording_time_origins.csv,start_unix_ns,ns,Original timestamp in the named monotonic/Unix clock (see time definitions)
+data/processed/config/task_boundaries.csv,active_support_fraction,dimensionless,Fraction named by the field; component fractions concern squared distance; coverage concerns valid support
+data/processed/config/task_boundaries.csv,annotated_transition_reason,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/config/task_boundaries.csv,automatic_end_optical_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/task_boundaries.csv,automatic_start_optical_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/task_boundaries.csv,block,index,"Experimental round, 1 or 2"
+data/processed/config/task_boundaries.csv,boundary_frequency_reference_Hz,Hz,Reciprocal measured period on the specified native/software timeline
+data/processed/config/task_boundaries.csv,boundary_window_uncertainty_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/task_boundaries.csv,clock_anchor_end_optical_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/task_boundaries.csv,clock_anchor_start_optical_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/task_boundaries.csv,clock_global_motion_certified,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/config/task_boundaries.csv,clock_held_anchor_max_error_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/task_boundaries.csv,end_candidate_high_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/task_boundaries.csv,end_candidate_low_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/task_boundaries.csv,end_optical_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/task_boundaries.csv,excluded_non_task_frames,count,Frames outside the formal task interval
+data/processed/config/task_boundaries.csv,excluded_post_task_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/task_boundaries.csv,excluded_preparation_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/task_boundaries.csv,expert,identifier,"ExpertA or ExpertB, the practitioner"
+data/processed/config/task_boundaries.csv,force_contact_threshold_N,N,Force in stated frame/sign; down/compression fields are positive compression
+data/processed/config/task_boundaries.csv,force_unloaded_endpoint_N,N,Force in stated frame/sign; down/compression fields are positive compression
+data/processed/config/task_boundaries.csv,formal_frame_coverage,dimensionless,Fraction named by the field; component fractions concern squared distance; coverage concerns valid support
+data/processed/config/task_boundaries.csv,formal_time_coverage,dimensionless,Fraction named by the field; component fractions concern squared distance; coverage concerns valid support
+data/processed/config/task_boundaries.csv,formal_valid_frames,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/config/task_boundaries.csv,formal_valid_seconds,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/config/task_boundaries.csv,host_alpha,s/s,Frozen optical-to-software time scale
+data/processed/config/task_boundaries.csv,host_beta_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/task_boundaries.csv,left_capture_censored,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/config/task_boundaries.csv,long_sustained_episode_count,count,Number of objects named by this field; not an independent participant count
+data/processed/config/task_boundaries.csv,material,identifier,Specimen P1/P3/P2/P4
+data/processed/config/task_boundaries.csv,needs_boundary_or_reference_review,boolean,Saved boundary/reference review status
+data/processed/config/task_boundaries.csv,onset_refinement,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/config/task_boundaries.csv,primary_reference_supported,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/config/task_boundaries.csv,reason,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/config/task_boundaries.csv,record_end_optical_s,identifier/list,Public record identifier(s) supporting the result
+data/processed/config/task_boundaries.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/processed/config/task_boundaries.csv,record_start_optical_s,identifier/list,Public record identifier(s) supporting the result
+data/processed/config/task_boundaries.csv,repeat,index,"Repetition within its condition; 1/2 for manipulation, 1/2/3 for material trials"
+data/processed/config/task_boundaries.csv,right_capture_censored,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/config/task_boundaries.csv,rule_version,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/config/task_boundaries.csv,start_candidate_high_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/task_boundaries.csv,start_candidate_low_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/task_boundaries.csv,start_optical_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/task_boundaries.csv,status,category,Original validity/processing or decomposition status; not a measured signal
+data/processed/config/task_boundaries.csv,task_duration_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/config/task_boundaries.csv,user_stage_annotation,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/evidence/formal_ati_imu_cycles.csv,ATI_phase_coverage,dimensionless,Fraction named by the field; component fractions concern squared distance; coverage concerns valid support
+data/processed/evidence/formal_ati_imu_cycles.csv,ATI_valid,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/evidence/formal_ati_imu_cycles.csv,IMU_phase_coverage,dimensionless,Fraction named by the field; component fractions concern squared distance; coverage concerns valid support
+data/processed/evidence/formal_ati_imu_cycles.csv,IMU_valid,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/evidence/formal_ati_imu_cycles.csv,duration_device_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/formal_ati_imu_cycles.csv,duration_host_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/formal_ati_imu_cycles.csv,end_device_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/formal_ati_imu_cycles.csv,end_host_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/formal_ati_imu_cycles.csv,frequency_device_Hz,Hz,Reciprocal measured period on the specified native/software timeline
+data/processed/evidence/formal_ati_imu_cycles.csv,frequency_host_Hz,Hz,Reciprocal measured period on the specified native/software timeline
+data/processed/evidence/formal_ati_imu_cycles.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/processed/evidence/formal_ati_imu_cycles.csv,start_device_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/formal_ati_imu_cycles.csv,start_host_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/formal_ati_imu_pair_distances.csv,RMS,see unit,Saved pair waveform RMS distance
+data/processed/evidence/formal_ati_imu_pair_distances.csv,channel,category,Fx/Fy/Fz in N; Tx/Ty/Tz in N m; wx/wy/wz in deg/s
+data/processed/evidence/formal_ati_imu_pair_distances.csv,comparison,category,"expert, repeat or material; matching rules in data_dictionary.md"
+data/processed/evidence/formal_ati_imu_pair_distances.csv,modality,category,ATI or IMU signal family
+data/processed/evidence/formal_ati_imu_pair_distances.csv,record_a,identifier,First member of a matched recording pair
+data/processed/evidence/formal_ati_imu_pair_distances.csv,record_b,identifier,Second member of a matched recording pair
+data/processed/evidence/formal_ati_imu_pair_distances.csv,unit,metadata,Physical unit of the scalar value
+data/processed/evidence/formal_ati_imu_phase_profiles.csv,block,index,"Experimental round, 1 or 2"
+data/processed/evidence/formal_ati_imu_phase_profiles.csv,channel,category,Fx/Fy/Fz in N; Tx/Ty/Tz in N m; wx/wy/wz in deg/s
+data/processed/evidence/formal_ati_imu_phase_profiles.csv,expert,identifier,"ExpertA or ExpertB, the practitioner"
+data/processed/evidence/formal_ati_imu_phase_profiles.csv,material,identifier,Specimen P1/P3/P2/P4
+data/processed/evidence/formal_ati_imu_phase_profiles.csv,mean,see unit / channel,Equal-cycle recording-mean waveform; temporal feature tables: waveform center
+data/processed/evidence/formal_ati_imu_phase_profiles.csv,modality,category,ATI or IMU signal family
+data/processed/evidence/formal_ati_imu_phase_profiles.csv,n_cycles,count,Accepted cycles contributing to this progress-bin mean
+data/processed/evidence/formal_ati_imu_phase_profiles.csv,phase,dimensionless,"Cycle progress, 0 through 1 in steps of .01"
+data/processed/evidence/formal_ati_imu_phase_profiles.csv,q10,see unit,10th percentile across supported cycles at this progress point
+data/processed/evidence/formal_ati_imu_phase_profiles.csv,q90,see unit,90th percentile across supported cycles at this progress point
+data/processed/evidence/formal_ati_imu_phase_profiles.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/processed/evidence/formal_ati_imu_phase_profiles.csv,repeat,index,"Repetition within its condition; 1/2 for manipulation, 1/2/3 for material trials"
+data/processed/evidence/formal_ati_imu_phase_profiles.csv,unit,metadata,Physical unit of the scalar value
+data/processed/evidence/formal_ati_imu_records.csv,ATI_accepted_cycles,count,Accepted force/moment cycles inside the frozen formal interval
+data/processed/evidence/formal_ati_imu_records.csv,ATI_coverage,dimensionless,Fraction named by the field; component fractions concern squared distance; coverage concerns valid support
+data/processed/evidence/formal_ati_imu_records.csv,ATI_valid_duration_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/formal_ati_imu_records.csv,ATI_valid_samples,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/evidence/formal_ati_imu_records.csv,IMU_accepted_cycles,count,Accepted IMU cycles inside the frozen formal interval
+data/processed/evidence/formal_ati_imu_records.csv,IMU_coverage,dimensionless,Fraction named by the field; component fractions concern squared distance; coverage concerns valid support
+data/processed/evidence/formal_ati_imu_records.csv,IMU_valid_duration_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/formal_ati_imu_records.csv,IMU_valid_samples,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/evidence/formal_ati_imu_records.csv,block,index,"Experimental round, 1 or 2"
+data/processed/evidence/formal_ati_imu_records.csv,end_host_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/formal_ati_imu_records.csv,expert,identifier,"ExpertA or ExpertB, the practitioner"
+data/processed/evidence/formal_ati_imu_records.csv,frequency_host_Hz_median,Hz,Median reciprocal cycle duration on mapped software time
+data/processed/evidence/formal_ati_imu_records.csv,frozen_events_inside_formal,count,Frozen cycle intervals retained inside the formal interval
+data/processed/evidence/formal_ati_imu_records.csv,material,identifier,Specimen P1/P3/P2/P4
+data/processed/evidence/formal_ati_imu_records.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/processed/evidence/formal_ati_imu_records.csv,repeat,index,"Repetition within its condition; 1/2 for manipulation, 1/2/3 for material trials"
+data/processed/evidence/formal_ati_imu_records.csv,start_host_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/formal_ati_imu_records.csv,task_duration_host_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/optical_formal_cycle_pairwise_distances.csv,comparison,category,"expert, repeat or material; matching rules in data_dictionary.md"
+data/processed/evidence/optical_formal_cycle_pairwise_distances.csv,cycle_mean_SO3_shape_RMS_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/evidence/optical_formal_cycle_pairwise_distances.csv,cycle_mean_position_shape_RMS_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/evidence/optical_formal_cycle_pairwise_distances.csv,cycle_position_x_RMS_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/evidence/optical_formal_cycle_pairwise_distances.csv,cycle_position_y_RMS_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/evidence/optical_formal_cycle_pairwise_distances.csv,cycle_position_z_RMS_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/evidence/optical_formal_cycle_pairwise_distances.csv,cycles_a,count,Number of objects named by this field; not an independent participant count
+data/processed/evidence/optical_formal_cycle_pairwise_distances.csv,cycles_b,count,Number of objects named by this field; not an independent participant count
+data/processed/evidence/optical_formal_cycle_pairwise_distances.csv,period_median_a_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/optical_formal_cycle_pairwise_distances.csv,period_median_b_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/optical_formal_cycle_pairwise_distances.csv,record_a,identifier,First member of a matched recording pair
+data/processed/evidence/optical_formal_cycle_pairwise_distances.csv,record_b,identifier,Second member of a matched recording pair
+data/processed/evidence/optical_formal_cycle_record_summary.csv,accepted_cycles,count,Number of objects named by this field; not an independent participant count
+data/processed/evidence/optical_formal_cycle_record_summary.csv,frequency_median_Hz,Hz,Reciprocal measured period on the specified native/software timeline
+data/processed/evidence/optical_formal_cycle_record_summary.csv,period_median_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/optical_formal_cycle_record_summary.csv,period_q25_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/optical_formal_cycle_record_summary.csv,period_q75_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/optical_formal_cycle_record_summary.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/processed/evidence/optical_formal_pairwise_distances.csv,SO3_P95_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/evidence/optical_formal_pairwise_distances.csv,SO3_RMS_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/evidence/optical_formal_pairwise_distances.csv,block,index,"Experimental round, 1 or 2"
+data/processed/evidence/optical_formal_pairwise_distances.csv,common_bins,count,Jointly supported optical task-progress bins in a pair
+data/processed/evidence/optical_formal_pairwise_distances.csv,comparison,category,"expert, repeat or material; matching rules in data_dictionary.md"
+data/processed/evidence/optical_formal_pairwise_distances.csv,expert_a,identifier/index,Experimental factor for pair member a
+data/processed/evidence/optical_formal_pairwise_distances.csv,expert_b,identifier/index,Experimental factor for pair member b
+data/processed/evidence/optical_formal_pairwise_distances.csv,material_a,identifier/index,Experimental factor for pair member a
+data/processed/evidence/optical_formal_pairwise_distances.csv,material_b,identifier/index,Experimental factor for pair member b
+data/processed/evidence/optical_formal_pairwise_distances.csv,position_shape_RMS_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/evidence/optical_formal_pairwise_distances.csv,position_x_RMS_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/evidence/optical_formal_pairwise_distances.csv,position_y_RMS_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/evidence/optical_formal_pairwise_distances.csv,position_z_RMS_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/evidence/optical_formal_pairwise_distances.csv,record_a,identifier,First member of a matched recording pair
+data/processed/evidence/optical_formal_pairwise_distances.csv,record_b,identifier,Second member of a matched recording pair
+data/processed/evidence/optical_formal_pairwise_distances.csv,reference_scenario,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/evidence/optical_formal_pairwise_distances.csv,repeat_a,identifier/index,Experimental factor for pair member a
+data/processed/evidence/optical_formal_pairwise_distances.csv,repeat_b,identifier/index,Experimental factor for pair member b
+data/processed/evidence/optical_formal_record_features.csv,angular_speed_p95_deg_s,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/processed/evidence/optical_formal_record_features.csv,angular_velocity_Tracker0_x_RMS_deg_s,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/processed/evidence/optical_formal_record_features.csv,angular_velocity_Tracker0_y_RMS_deg_s,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/processed/evidence/optical_formal_record_features.csv,angular_velocity_Tracker0_z_RMS_deg_s,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/processed/evidence/optical_formal_record_features.csv,block,index,"Experimental round, 1 or 2"
+data/processed/evidence/optical_formal_record_features.csv,capture_duration_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/optical_formal_record_features.csv,excluded_non_task_frames,count,Frames outside the formal task interval
+data/processed/evidence/optical_formal_record_features.csv,expert,identifier,"ExpertA or ExpertB, the practitioner"
+data/processed/evidence/optical_formal_record_features.csv,formal_frame_coverage,dimensionless,Fraction named by the field; component fractions concern squared distance; coverage concerns valid support
+data/processed/evidence/optical_formal_record_features.csv,formal_manipulation_duration_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/optical_formal_record_features.csv,formal_time_coverage,dimensionless,Fraction named by the field; component fractions concern squared distance; coverage concerns valid support
+data/processed/evidence/optical_formal_record_features.csv,formal_total_frames,count,Native frames classified as formal manipulation
+data/processed/evidence/optical_formal_record_features.csv,formal_valid_frames,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/evidence/optical_formal_record_features.csv,formal_valid_seconds,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/evidence/optical_formal_record_features.csv,linear_speed_p95_mm_s,mm/s,Optical linear velocity in Tracker0 axes; suffix gives aggregation
+data/processed/evidence/optical_formal_record_features.csv,material,identifier,Specimen P1/P3/P2/P4
+data/processed/evidence/optical_formal_record_features.csv,near170_formal_frames,count,Formal valid frames with reference-normalized geodesic angle at least 170 degrees
+data/processed/evidence/optical_formal_record_features.csv,orientation_excursion_max_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/evidence/optical_formal_record_features.csv,orientation_excursion_p95_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/evidence/optical_formal_record_features.csv,pause_duration_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/optical_formal_record_features.csv,pause_frames,count,Saved pause frames; zero for all current records
+data/processed/evidence/optical_formal_record_features.csv,position_x_range_p05_p95_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/evidence/optical_formal_record_features.csv,position_y_range_p05_p95_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/evidence/optical_formal_record_features.csv,position_z_range_p05_p95_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/evidence/optical_formal_record_features.csv,primary_reference_supported,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/evidence/optical_formal_record_features.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/processed/evidence/optical_formal_record_features.csv,repeat,index,"Repetition within its condition; 1/2 for manipulation, 1/2/3 for material trials"
+data/processed/evidence/optical_formal_record_features.csv,rotation_vector_x_p05_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/evidence/optical_formal_record_features.csv,rotation_vector_x_p95_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/evidence/optical_formal_record_features.csv,rotation_vector_y_p05_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/evidence/optical_formal_record_features.csv,rotation_vector_y_p95_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/evidence/optical_formal_record_features.csv,rotation_vector_z_p05_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/evidence/optical_formal_record_features.csv,rotation_vector_z_p95_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/evidence/optical_formal_record_features.csv,task_duration_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/optical_formal_record_features.csv,task_end_optical_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/optical_formal_record_features.csv,task_start_optical_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/optical_formal_record_features.csv,valid_runs,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/evidence/rigor/frozen_event_thirds.csv,ATI_phase_coverage,dimensionless,Fraction named by the field; component fractions concern squared distance; coverage concerns valid support
+data/processed/evidence/rigor/frozen_event_thirds.csv,ATI_valid,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/evidence/rigor/frozen_event_thirds.csv,IMU_phase_coverage,dimensionless,Fraction named by the field; component fractions concern squared distance; coverage concerns valid support
+data/processed/evidence/rigor/frozen_event_thirds.csv,IMU_valid,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/evidence/rigor/frozen_event_thirds.csv,assignment,rule,Saved event host midpoint assigned to equal-duration formal thirds
+data/processed/evidence/rigor/frozen_event_thirds.csv,end_device_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/rigor/frozen_event_thirds.csv,end_host_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/rigor/frozen_event_thirds.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/processed/evidence/rigor/frozen_event_thirds.csv,start_device_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/rigor/frozen_event_thirds.csv,start_host_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/evidence/rigor/frozen_event_thirds.csv,third,index,"Equal-duration formal interval: 1 early, 2 middle, 3 late; midpoint assignment"
+data/processed/evidence/temporal/formal_third_imu_profiles.csv,channel,category,Fx/Fy/Fz in N; Tx/Ty/Tz in N m; wx/wy/wz in deg/s
+data/processed/evidence/temporal/formal_third_imu_profiles.csv,mean_deg_s,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/processed/evidence/temporal/formal_third_imu_profiles.csv,n_cycles,count,Accepted cycles contributing to this progress-bin mean
+data/processed/evidence/temporal/formal_third_imu_profiles.csv,phase,dimensionless,"Cycle progress, 0 through 1 in steps of .01"
+data/processed/evidence/temporal/formal_third_imu_profiles.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/processed/evidence/temporal/formal_third_imu_profiles.csv,third,index,"Equal-duration formal interval: 1 early, 2 middle, 3 late; midpoint assignment"
+data/processed/figure_sources/P1_actual_native_state_display.csv,Fx,N,Force in stated frame/sign; down/compression fields are positive compression
+data/processed/figure_sources/P1_actual_native_state_display.csv,Fy,N,Force in stated frame/sign; down/compression fields are positive compression
+data/processed/figure_sources/P1_actual_native_state_display.csv,Fz,N,Force in stated frame/sign; down/compression fields are positive compression
+data/processed/figure_sources/P1_actual_native_state_display.csv,Tx,N m,Signed ATI moment in device axes; zeroed_ subtracts saved tare
+data/processed/figure_sources/P1_actual_native_state_display.csv,Ty,N m,Signed ATI moment in device axes; zeroed_ subtracts saved tare
+data/processed/figure_sources/P1_actual_native_state_display.csv,Tz,N m,Signed ATI moment in device axes; zeroed_ subtracts saved tare
+data/processed/figure_sources/P1_actual_native_state_display.csv,formal_elapsed_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/figure_sources/P1_actual_native_state_display.csv,group,category,force/moment/gyro for displayed native-state samples
+data/processed/figure_sources/P1_actual_native_state_display.csv,host_time_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/figure_sources/P1_actual_native_state_display.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/processed/figure_sources/P1_actual_native_state_display.csv,wx,deg/s,Signed IMU device-axis angular velocity
+data/processed/figure_sources/P1_actual_native_state_display.csv,wy,deg/s,Signed IMU device-axis angular velocity
+data/processed/figure_sources/P1_actual_native_state_display.csv,wz,deg/s,Signed IMU device-axis angular velocity
+data/processed/figure_sources/P1_native_cycle_state_sequences.csv,Fx,N,Force in stated frame/sign; down/compression fields are positive compression
+data/processed/figure_sources/P1_native_cycle_state_sequences.csv,Fy,N,Force in stated frame/sign; down/compression fields are positive compression
+data/processed/figure_sources/P1_native_cycle_state_sequences.csv,Fz,N,Force in stated frame/sign; down/compression fields are positive compression
+data/processed/figure_sources/P1_native_cycle_state_sequences.csv,Tx,N m,Signed ATI moment in device axes; zeroed_ subtracts saved tare
+data/processed/figure_sources/P1_native_cycle_state_sequences.csv,Ty,N m,Signed ATI moment in device axes; zeroed_ subtracts saved tare
+data/processed/figure_sources/P1_native_cycle_state_sequences.csv,Tz,N m,Signed ATI moment in device axes; zeroed_ subtracts saved tare
+data/processed/figure_sources/P1_native_cycle_state_sequences.csv,cycle_end_host_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/figure_sources/P1_native_cycle_state_sequences.csv,cycle_start_host_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/figure_sources/P1_native_cycle_state_sequences.csv,group,category,force/moment/gyro for displayed native-state samples
+data/processed/figure_sources/P1_native_cycle_state_sequences.csv,host_time_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/figure_sources/P1_native_cycle_state_sequences.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/processed/figure_sources/P1_native_cycle_state_sequences.csv,segment,index/category,Acquisition segment in raw IMU; early/middle/late in temporal results
+data/processed/figure_sources/P1_native_cycle_state_sequences.csv,wx,deg/s,Signed IMU device-axis angular velocity
+data/processed/figure_sources/P1_native_cycle_state_sequences.csv,wy,deg/s,Signed IMU device-axis angular velocity
+data/processed/figure_sources/P1_native_cycle_state_sequences.csv,wz,deg/s,Signed IMU device-axis angular velocity
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,cycle_mean_q_w,dimensionless,XYZW unit quaternion component/array in the file-family reference frame
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,cycle_mean_q_x,dimensionless,XYZW unit quaternion component/array in the file-family reference frame
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,cycle_mean_q_y,dimensionless,XYZW unit quaternion component/array in the file-family reference frame
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,cycle_mean_q_z,dimensionless,XYZW unit quaternion component/array in the file-family reference frame
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,cycles,count,Accepted optical cycles used by the recording mean
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,dx_mm_mean,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,dx_mm_q25,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,dx_mm_q75,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,dy_mm_mean,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,dy_mm_q25,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,dy_mm_q75,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,dz_mm_mean,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,dz_mm_q25,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,dz_mm_q75,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,phase,dimensionless,"Cycle progress, 0 through 1 in steps of .01"
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,rotvec_x_mean_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,rotvec_x_q25_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,rotvec_x_q75_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,rotvec_y_mean_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,rotvec_y_q25_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,rotvec_y_q75_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,rotvec_z_mean_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,rotvec_z_q25_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,rotvec_z_q75_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,vx_mm_s_mean,mm/s,Optical linear velocity in Tracker0 axes; suffix gives aggregation
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,vx_mm_s_q25,mm/s,Optical linear velocity in Tracker0 axes; suffix gives aggregation
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,vx_mm_s_q75,mm/s,Optical linear velocity in Tracker0 axes; suffix gives aggregation
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,vy_mm_s_mean,mm/s,Optical linear velocity in Tracker0 axes; suffix gives aggregation
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,vy_mm_s_q25,mm/s,Optical linear velocity in Tracker0 axes; suffix gives aggregation
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,vy_mm_s_q75,mm/s,Optical linear velocity in Tracker0 axes; suffix gives aggregation
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,vz_mm_s_mean,mm/s,Optical linear velocity in Tracker0 axes; suffix gives aggregation
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,vz_mm_s_q25,mm/s,Optical linear velocity in Tracker0 axes; suffix gives aggregation
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,vz_mm_s_q75,mm/s,Optical linear velocity in Tracker0 axes; suffix gives aggregation
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,wx_spatial_deg_s_mean,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,wx_spatial_deg_s_q25,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,wx_spatial_deg_s_q75,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,wy_spatial_deg_s_mean,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,wy_spatial_deg_s_q25,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,wy_spatial_deg_s_q75,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,wz_spatial_deg_s_mean,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,wz_spatial_deg_s_q25,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/processed/figure_sources/formal_optical_cycle_profiles.csv,wz_spatial_deg_s_q75,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/processed/figure_sources/mechanical_curves.csv,force_N,N,Force in stated frame/sign; down/compression fields are positive compression
+data/processed/figure_sources/mechanical_curves.csv,relative_depth_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/figure_sources/mechanical_curves.csv,repeat,index,"Repetition within its condition; 1/2 for manipulation, 1/2/3 for material trials"
+data/processed/figure_sources/mechanical_curves.csv,specimen,identifier,Specimen P1/P3/P2/P4
+data/processed/figure_sources/mechanical_curves.csv,time_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/material/{trial_id}/depth_reference.json,contact_reference.criteria.force_span,N,Stable preload force criterion/measurement
+data/processed/material/{trial_id}/depth_reference.json,contact_reference.criteria.force_tolerance,N,Stable preload force criterion/measurement
+data/processed/material/{trial_id}/depth_reference.json,contact_reference.criteria.hold,s,"Preload duration/continuity criterion or event timestamp, as named"
+data/processed/material/{trial_id}/depth_reference.json,contact_reference.criteria.max_gap,s,"Preload duration/continuity criterion or event timestamp, as named"
+data/processed/material/{trial_id}/depth_reference.json,contact_reference.criteria.position_span,m,Stable preload position-span threshold
+data/processed/material/{trial_id}/depth_reference.json,contact_reference.criteria.speed,m/s,Stable preload speed threshold
+data/processed/material/{trial_id}/depth_reference.json,contact_reference.criteria.target_force,N,Stable preload force criterion/measurement
+data/processed/material/{trial_id}/depth_reference.json,contact_reference.criteria.timeout,s,"Preload duration/continuity criterion or event timestamp, as named"
+data/processed/material/{trial_id}/depth_reference.json,contact_reference.frame,index,Native optical frame number
+data/processed/material/{trial_id}/depth_reference.json,contact_reference.measured_force_n,N,Stable preload force criterion/measurement
+data/processed/material/{trial_id}/depth_reference.json,contact_reference.pose_stamp,s,"Preload duration/continuity criterion or event timestamp, as named"
+data/processed/material/{trial_id}/depth_reference.json,contact_reference.position,m,Three-vector in the saved robot/base or tool reference specified by field
+data/processed/material/{trial_id}/depth_reference.json,contact_reference.quaternion,dimensionless,XYZW unit quaternion component/array in the file-family reference frame
+data/processed/material/{trial_id}/depth_reference.json,contact_reference.schema,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/material/{trial_id}/depth_reference.json,contact_reference.semantics,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/material/{trial_id}/depth_reference.json,contact_reference.sphere_center,m,Three-vector in the saved robot/base or tool reference specified by field
+data/processed/material/{trial_id}/depth_reference.json,contact_reference.sphere_offset_m,m,Three-vector in the saved robot/base or tool reference specified by field
+data/processed/material/{trial_id}/depth_reference.json,contact_reference.stable_window_end,s,"Preload duration/continuity criterion or event timestamp, as named"
+data/processed/material/{trial_id}/depth_reference.json,contact_reference.stable_window_start,s,"Preload duration/continuity criterion or event timestamp, as named"
+data/processed/material/{trial_id}/depth_reference.json,contact_reference.timestamp,Unix s,Software timestamp
+data/processed/material/{trial_id}/depth_reference.json,contact_reference.valid,boolean,Validity at this processing layer; see file-family definition
+data/processed/material/{trial_id}/depth_reference.json,max_depth_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/material/{trial_id}/depth_reference.json,mode,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/material/{trial_id}/depth_reference.json,surface_normal_base,dimensionless,Unit reference normal in robot base axes
+data/processed/material/{trial_id}/material.contact_reference.json,criteria.force_span,N,Stable preload force criterion/measurement
+data/processed/material/{trial_id}/material.contact_reference.json,criteria.force_tolerance,N,Stable preload force criterion/measurement
+data/processed/material/{trial_id}/material.contact_reference.json,criteria.hold,s,"Preload duration/continuity criterion or event timestamp, as named"
+data/processed/material/{trial_id}/material.contact_reference.json,criteria.max_gap,s,"Preload duration/continuity criterion or event timestamp, as named"
+data/processed/material/{trial_id}/material.contact_reference.json,criteria.position_span,m,Stable preload position-span threshold
+data/processed/material/{trial_id}/material.contact_reference.json,criteria.speed,m/s,Stable preload speed threshold
+data/processed/material/{trial_id}/material.contact_reference.json,criteria.target_force,N,Stable preload force criterion/measurement
+data/processed/material/{trial_id}/material.contact_reference.json,criteria.timeout,s,"Preload duration/continuity criterion or event timestamp, as named"
+data/processed/material/{trial_id}/material.contact_reference.json,frame,index,Native optical frame number
+data/processed/material/{trial_id}/material.contact_reference.json,measured_force_n,N,Stable preload force criterion/measurement
+data/processed/material/{trial_id}/material.contact_reference.json,pose_stamp,s,"Preload duration/continuity criterion or event timestamp, as named"
+data/processed/material/{trial_id}/material.contact_reference.json,position,m,Three-vector in the saved robot/base or tool reference specified by field
+data/processed/material/{trial_id}/material.contact_reference.json,quaternion,dimensionless,XYZW unit quaternion component/array in the file-family reference frame
+data/processed/material/{trial_id}/material.contact_reference.json,schema,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/material/{trial_id}/material.contact_reference.json,semantics,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/material/{trial_id}/material.contact_reference.json,sphere_center,m,Three-vector in the saved robot/base or tool reference specified by field
+data/processed/material/{trial_id}/material.contact_reference.json,sphere_offset_m,m,Three-vector in the saved robot/base or tool reference specified by field
+data/processed/material/{trial_id}/material.contact_reference.json,stable_window_end,s,"Preload duration/continuity criterion or event timestamp, as named"
+data/processed/material/{trial_id}/material.contact_reference.json,stable_window_start,s,"Preload duration/continuity criterion or event timestamp, as named"
+data/processed/material/{trial_id}/material.contact_reference.json,timestamp,Unix s,Software timestamp
+data/processed/material/{trial_id}/material.contact_reference.json,valid,boolean,Validity at this processing layer; see file-family definition
+data/processed/material/{trial_id}/replay.csv.contact_reference.json,criteria.force_span,N,Stable preload force criterion/measurement
+data/processed/material/{trial_id}/replay.csv.contact_reference.json,criteria.force_tolerance,N,Stable preload force criterion/measurement
+data/processed/material/{trial_id}/replay.csv.contact_reference.json,criteria.hold,s,"Preload duration/continuity criterion or event timestamp, as named"
+data/processed/material/{trial_id}/replay.csv.contact_reference.json,criteria.max_gap,s,"Preload duration/continuity criterion or event timestamp, as named"
+data/processed/material/{trial_id}/replay.csv.contact_reference.json,criteria.position_span,m,Stable preload position-span threshold
+data/processed/material/{trial_id}/replay.csv.contact_reference.json,criteria.speed,m/s,Stable preload speed threshold
+data/processed/material/{trial_id}/replay.csv.contact_reference.json,criteria.target_force,N,Stable preload force criterion/measurement
+data/processed/material/{trial_id}/replay.csv.contact_reference.json,criteria.timeout,s,"Preload duration/continuity criterion or event timestamp, as named"
+data/processed/material/{trial_id}/replay.csv.contact_reference.json,frame,index,Native optical frame number
+data/processed/material/{trial_id}/replay.csv.contact_reference.json,measured_force_n,N,Stable preload force criterion/measurement
+data/processed/material/{trial_id}/replay.csv.contact_reference.json,pose_stamp,s,"Preload duration/continuity criterion or event timestamp, as named"
+data/processed/material/{trial_id}/replay.csv.contact_reference.json,position,m,Three-vector in the saved robot/base or tool reference specified by field
+data/processed/material/{trial_id}/replay.csv.contact_reference.json,quaternion,dimensionless,XYZW unit quaternion component/array in the file-family reference frame
+data/processed/material/{trial_id}/replay.csv.contact_reference.json,schema,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/material/{trial_id}/replay.csv.contact_reference.json,semantics,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/material/{trial_id}/replay.csv.contact_reference.json,sphere_center,m,Three-vector in the saved robot/base or tool reference specified by field
+data/processed/material/{trial_id}/replay.csv.contact_reference.json,sphere_offset_m,m,Three-vector in the saved robot/base or tool reference specified by field
+data/processed/material/{trial_id}/replay.csv.contact_reference.json,stable_window_end,s,"Preload duration/continuity criterion or event timestamp, as named"
+data/processed/material/{trial_id}/replay.csv.contact_reference.json,stable_window_start,s,"Preload duration/continuity criterion or event timestamp, as named"
+data/processed/material/{trial_id}/replay.csv.contact_reference.json,timestamp,Unix s,Software timestamp
+data/processed/material/{trial_id}/replay.csv.contact_reference.json,valid,boolean,Validity at this processing layer; see file-family definition
+data/processed/optical/formal_cycle_QC.csv,cycle_index,index,Index at the file-specific native/run/cycle/batch level
+data/processed/optical/formal_cycle_QC.csv,end_frame,index,Index at the file-specific native/run/cycle/batch level
+data/processed/optical/formal_cycle_QC.csv,end_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/optical/formal_cycle_QC.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/processed/optical/formal_cycle_QC.csv,start_frame,index,Index at the file-specific native/run/cycle/batch level
+data/processed/optical/formal_cycle_QC.csv,start_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/optical/formal_cycle_QC.csv,status,category,Original validity/processing or decomposition status; not a measured signal
+data/processed/optical/formal_cycle_event_axis_QC.csv,PC1_variance_fraction,dimensionless,Fraction named by the field; component fractions concern squared distance; coverage concerns valid support
+data/processed/optical/formal_cycle_event_axis_QC.csv,PCA_axis_Tracker0_x,dimensionless,Unit principal-axis loading in the specified XYZ frame
+data/processed/optical/formal_cycle_event_axis_QC.csv,PCA_axis_Tracker0_y,dimensionless,Unit principal-axis loading in the specified XYZ frame
+data/processed/optical/formal_cycle_event_axis_QC.csv,PCA_axis_Tracker0_z,dimensionless,Unit principal-axis loading in the specified XYZ frame
+data/processed/optical/formal_cycle_event_axis_QC.csv,axis_polarity,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/optical/formal_cycle_event_axis_QC.csv,axis_polarity_condition_abs_Y,dimensionless,Absolute Y component of the optical principal axis
+data/processed/optical/formal_cycle_event_axis_QC.csv,axis_polarity_supported,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/optical/formal_cycle_event_axis_QC.csv,candidate_cycles,count,Number of objects named by this field; not an independent participant count
+data/processed/optical/formal_cycle_event_axis_QC.csv,early_axis_deviation_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/optical/formal_cycle_event_axis_QC.csv,event_version,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/optical/formal_cycle_event_axis_QC.csv,late_axis_deviation_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/optical/formal_cycle_event_axis_QC.csv,middle_axis_deviation_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/optical/formal_cycle_event_axis_QC.csv,prominence_deg_s,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/processed/optical/formal_cycle_event_axis_QC.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/processed/optical/formal_cycle_event_axis_QC.csv,rejected_duration_intervals,count,Number of objects named by this field; not an independent participant count
+data/processed/optical/formal_native_cycle_candidates.csv,cycle_index,index,Index at the file-specific native/run/cycle/batch level
+data/processed/optical/formal_native_cycle_candidates.csv,duration_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/optical/formal_native_cycle_candidates.csv,end_frame,index,Index at the file-specific native/run/cycle/batch level
+data/processed/optical/formal_native_cycle_candidates.csv,end_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/optical/formal_native_cycle_candidates.csv,frequency_Hz,Hz,Reciprocal measured period on the specified native/software timeline
+data/processed/optical/formal_native_cycle_candidates.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/processed/optical/formal_native_cycle_candidates.csv,start_frame,index,Index at the file-specific native/run/cycle/batch level
+data/processed/optical/formal_native_cycle_candidates.csv,start_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/optical/formal_valid_intervals.csv,duration_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/optical/formal_valid_intervals.csv,end_frame,index,Index at the file-specific native/run/cycle/batch level
+data/processed/optical/formal_valid_intervals.csv,end_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/optical/formal_valid_intervals.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/processed/optical/formal_valid_intervals.csv,run_id,index,Index at the file-specific native/run/cycle/batch level
+data/processed/optical/formal_valid_intervals.csv,samples,count,Samples in this run/window
+data/processed/optical/formal_valid_intervals.csv,start_frame,index,Index at the file-specific native/run/cycle/batch level
+data/processed/optical/formal_valid_intervals.csv,start_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/optical_cycles/{record_id}.npz,array,mixed,Optical cycles x101x9: position mm; velocity mm/s; spatial angular velocity deg/s
+data/processed/optical_cycles/{record_id}.npz,meanq,dimensionless,101x4 proper chordal mean cycle quaternions XYZW
+data/processed/optical_cycles/{record_id}.npz,quat,dimensionless,"Optical cycles x101x4 XYZW, relative to cycle-start orientation"
+data/processed/optical_cycles/{record_id}.npz,task_end,s,Native optical formal interval end
+data/processed/optical_cycles/{record_id}.npz,task_start,s,Native optical formal interval start
+data/processed/optical_cycles/{record_id}.npz,times,s,"Optical cycle rows: native start, end, measured duration"
+data/processed/pair_index.csv,comparison,category,"expert, repeat or material; matching rules in data_dictionary.md"
+data/processed/pair_index.csv,record_a,identifier,First member of a matched recording pair
+data/processed/pair_index.csv,record_b,identifier,Second member of a matched recording pair
+data/processed/record_index.csv,ATI_accepted_cycles,count,Accepted force/moment cycles inside the frozen formal interval
+data/processed/record_index.csv,IMU_accepted_cycles,count,Accepted IMU cycles inside the frozen formal interval
+data/processed/record_index.csv,block,index,"Experimental round, 1 or 2"
+data/processed/record_index.csv,end_host_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/record_index.csv,expert,identifier,"ExpertA or ExpertB, the practitioner"
+data/processed/record_index.csv,material,identifier,Specimen P1/P3/P2/P4
+data/processed/record_index.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/processed/record_index.csv,repeat,index,"Repetition within its condition; 1/2 for manipulation, 1/2/3 for material trials"
+data/processed/record_index.csv,start_host_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/records/{record_id}/ati_calibration.json,action,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/records/{record_id}/ati_calibration.json,bias,N; N m,"Six tare components Fx,Fy,Fz,Tx,Ty,Tz"
+data/processed/records/{record_id}/ati_calibration.json,first_monotonic_ns,ns,Original timestamp in the named monotonic/Unix clock (see time definitions)
+data/processed/records/{record_id}/ati_calibration.json,last_monotonic_ns,ns,Original timestamp in the named monotonic/Unix clock (see time definitions)
+data/processed/records/{record_id}/ati_calibration.json,operator_confirmed_unloaded,boolean,"Original configuration/calibration flag, retained without reinterpretation"
+data/processed/records/{record_id}/ati_calibration.json,record_bias,N; N m,Actual six tare values applied to this recording
+data/processed/records/{record_id}/ati_calibration.json,samples,count,Samples in this run/window
+data/processed/records/{record_id}/ati_calibration.json,sensor_fields.cfgcpf,counts/unit,Actual force/moment count divisor
+data/processed/records/{record_id}/ati_calibration.json,sensor_fields.cfgcpt,counts/unit,Actual force/moment count divisor
+data/processed/records/{record_id}/ati_calibration.json,sensor_fields.cfgtfx,configured transform,Saved six-component ATI tool transform; all components zero in this dataset
+data/processed/records/{record_id}/ati_calibration.json,sensor_fields.comrdtmsyn,device config code,Original vendor setting; low-level code interpretation not independently verified; no filter/sync claim derived from it
+data/processed/records/{record_id}/ati_calibration.json,sensor_fields.comrdtrate,Hz,Device internal-counter/output rate respectively
+data/processed/records/{record_id}/ati_calibration.json,sensor_fields.runrate,Hz,Device internal-counter/output rate respectively
+data/processed/records/{record_id}/ati_calibration.json,sensor_fields.scfgfu,unit text,Device-configured force/moment SI units
+data/processed/records/{record_id}/ati_calibration.json,sensor_fields.scfgtu,unit text,Device-configured force/moment SI units
+data/processed/records/{record_id}/ati_calibration.json,sensor_fields.setflt,device config code,Original vendor setting; low-level code interpretation not independently verified; no filter/sync claim derived from it
+data/processed/records/{record_id}/ati_calibration.json,sensor_fields.setfltan,device config code,Original vendor setting; low-level code interpretation not independently verified; no filter/sync claim derived from it
+data/processed/records/{record_id}/ati_calibration.json,sensor_fields.setfltcoef,device config code,Original vendor setting; low-level code interpretation not independently verified; no filter/sync claim derived from it
+data/processed/records/{record_id}/ati_calibration.json,sensor_fields.setiirshift,device config code,Original vendor setting; low-level code interpretation not independently verified; no filter/sync claim derived from it
+data/processed/records/{record_id}/ati_calibration.json,sensor_fields.setuserfilter,device config code,Original vendor setting; low-level code interpretation not independently verified; no filter/sync claim derived from it
+data/processed/records/{record_id}/ati_calibration.json,status,category,Original validity/processing or decomposition status; not a measured signal
+data/processed/records/{record_id}/ati_calibration.json,std,N; N m,Tare-window component SDs
+data/processed/records/{record_id}/ati_calibration.json,std_limits,N; N m,Saved component SD thresholds
+data/processed/records/{record_id}/ati_imu_native.npz,force_down_source_N,N,Force in stated frame/sign; down/compression fields are positive compression
+data/processed/records/{record_id}/ati_imu_native.npz,force_edge_contiguous,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/records/{record_id}/ati_imu_native.npz,force_ft_sequence,counter,"Original ATI force/torque counter, 7000 ticks/s"
+data/processed/records/{record_id}/ati_imu_native.npz,force_host_elapsed_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/records/{record_id}/ati_imu_native.npz,force_host_monotonic_ns,ns,Original timestamp in the named monotonic/Unix clock (see time definitions)
+data/processed/records/{record_id}/ati_imu_native.npz,force_host_unix_ns,ns,Original timestamp in the named monotonic/Unix clock (see time definitions)
+data/processed/records/{record_id}/ati_imu_native.npz,force_rdt_delta,counter increment,Difference in adjacent packet sequence counters; first missing
+data/processed/records/{record_id}/ati_imu_native.npz,force_rdt_sequence,counter,Original ATI packet counter
+data/processed/records/{record_id}/ati_imu_native.npz,force_receive_delta_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/records/{record_id}/ati_imu_native.npz,force_sensor_zeroed,N; N m,"Nf x6: Fx,Fy,Fz,Tx,Ty,Tz after saved tare"
+data/processed/records/{record_id}/ati_imu_native.npz,force_source_row,zero-based row,Row in original ATI decoded.csv
+data/processed/records/{record_id}/ati_imu_native.npz,force_source_valid,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/records/{record_id}/ati_imu_native.npz,force_status,device code,Original ATI status word
+data/processed/records/{record_id}/ati_imu_native.npz,force_valid,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/records/{record_id}/ati_imu_native.npz,imu_batch_id,index,Index at the file-specific native/run/cycle/batch level
+data/processed/records/{record_id}/ati_imu_native.npz,imu_device_datetime_unmapped,device calendar text,Unmapped sample datetime; not verified absolute experiment date
+data/processed/records/{record_id}/ati_imu_native.npz,imu_device_delta_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/records/{record_id}/ati_imu_native.npz,imu_device_elapsed_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/records/{record_id}/ati_imu_native.npz,imu_edge_contiguous,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/records/{record_id}/ati_imu_native.npz,imu_gyro_deg_s,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/processed/records/{record_id}/ati_imu_native.npz,imu_host_elapsed_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/records/{record_id}/ati_imu_native.npz,imu_host_monotonic_ns,ns,Original timestamp in the named monotonic/Unix clock (see time definitions)
+data/processed/records/{record_id}/ati_imu_native.npz,imu_host_unix_ns,ns,Original timestamp in the named monotonic/Unix clock (see time definitions)
+data/processed/records/{record_id}/ati_imu_native.npz,imu_raw_offset,byte,IMU sample offset in raw.bin
+data/processed/records/{record_id}/ati_imu_native.npz,imu_relative_quaternion_xyzw,dimensionless,Ni x4 XYZW relative to initial IMU orientation
+data/processed/records/{record_id}/ati_imu_native.npz,imu_source_row,zero-based row,Row in original IMU decoded.csv
+data/processed/records/{record_id}/ati_imu_native.npz,imu_source_valid,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/records/{record_id}/ati_imu_native.npz,imu_valid,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/records/{record_id}/ati_time_axis.npz,ati_device_counter_elapsed_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/records/{record_id}/ati_time_axis.npz,ati_ft_sequence,counter,"Original ATI force/torque counter, 7000 ticks/s"
+data/processed/records/{record_id}/ati_time_axis.npz,ati_host_receive_elapsed_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/records/{record_id}/ati_time_axis.npz,ati_source_row,zero-based row,Row in original ATI decoded.csv
+data/processed/records/{record_id}/ati_time_axis.npz,ati_valid,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/records/{record_id}/imu_calibration_summary.json,action,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/records/{record_id}/imu_calibration_summary.json,before.backward_intervals,count,Nonpositive/backward IMU device intervals in calibration diagnostics
+data/processed/records/{record_id}/imu_calibration_summary.json,before.device_span_sec,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/records/{record_id}/imu_calibration_summary.json,before.duplicate_intervals,count,Duplicate IMU device timestamps in calibration diagnostics
+data/processed/records/{record_id}/imu_calibration_summary.json,before.frames,count,Calibration frames
+data/processed/records/{record_id}/imu_calibration_summary.json,before.gap_intervals,count,Device-time gaps counted by the original IMU calibration check
+data/processed/records/{record_id}/imu_calibration_summary.json,before.max_interval_ms,ms,Time or time residual in the coordinate indicated by the field name
+data/processed/records/{record_id}/imu_calibration_summary.json,before.mean_accel_g,g,IMU acceleration along named device axis
+data/processed/records/{record_id}/imu_calibration_summary.json,before.mean_accel_norm_g,g,IMU acceleration along named device axis
+data/processed/records/{record_id}/imu_calibration_summary.json,before.mean_gyro_deg_s,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/processed/records/{record_id}/imu_calibration_summary.json,before.observed_gravity_sign,sign,Sign of the measured accelerometer gravity direction reported by calibration
+data/processed/records/{record_id}/imu_calibration_summary.json,before.peak_gyro_norm_deg_s,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/processed/records/{record_id}/imu_calibration_summary.json,before.std_accel_g,g,IMU acceleration along named device axis
+data/processed/records/{record_id}/imu_calibration_summary.json,before.std_gyro_deg_s,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/processed/records/{record_id}/imu_calibration_summary.json,device_commands_sent,count,IMU configuration commands sent during this recorded calibration
+data/processed/records/{record_id}/imu_calibration_summary.json,status,category,Original validity/processing or decomposition status; not a measured signal
+data/processed/records/{record_id}/imu_orientation.csv,device_datetime_unmapped,device calendar text,Unmapped sample datetime; use native elapsed coordinate for analysis
+data/processed/records/{record_id}/imu_orientation.csv,euler_singular,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/records/{record_id}/imu_orientation.csv,host_elapsed_sec,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/records/{record_id}/imu_orientation.csv,host_receive_monotonic_ns,ns,Original timestamp in the named monotonic/Unix clock (see time definitions)
+data/processed/records/{record_id}/imu_orientation.csv,host_receive_unix_ns,ns,Original timestamp in the named monotonic/Unix clock (see time definitions)
+data/processed/records/{record_id}/imu_orientation.csv,raw_offset,byte,28-byte IMU sample offset
+data/processed/records/{record_id}/imu_orientation.csv,relative_pitch_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/records/{record_id}/imu_orientation.csv,relative_qw,dimensionless,XYZW unit quaternion component/array in the file-family reference frame
+data/processed/records/{record_id}/imu_orientation.csv,relative_qx,dimensionless,XYZW unit quaternion component/array in the file-family reference frame
+data/processed/records/{record_id}/imu_orientation.csv,relative_qy,dimensionless,XYZW unit quaternion component/array in the file-family reference frame
+data/processed/records/{record_id}/imu_orientation.csv,relative_qz,dimensionless,XYZW unit quaternion component/array in the file-family reference frame
+data/processed/records/{record_id}/imu_orientation.csv,relative_roll_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/records/{record_id}/imu_orientation.csv,relative_yaw_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/records/{record_id}/imu_orientation.csv,rotation_angle_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/records/{record_id}/imu_orientation.csv,segment,index/category,Acquisition segment in raw IMU; early/middle/late in temporal results
+data/processed/records/{record_id}/imu_orientation.csv,valid,boolean,Validity at this processing layer; see file-family definition
+data/processed/records/{record_id}/imu_orientation_reference.json,convention,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/records/{record_id}/imu_orientation_reference.json,created_monotonic_ns,ns,Original timestamp in the named monotonic/Unix clock (see time definitions)
+data/processed/records/{record_id}/imu_orientation_reference.json,expressed_in,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/records/{record_id}/imu_orientation_reference.json,max_deviation_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/records/{record_id}/imu_orientation_reference.json,quaternion_xyzw,dimensionless,XYZW unit quaternion component/array in the file-family reference frame
+data/processed/records/{record_id}/imu_orientation_reference.json,reference_euler_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/processed/records/{record_id}/imu_orientation_reference.json,relative_definition,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/records/{record_id}/imu_orientation_reference.json,robot_mapping_applied,boolean,"Original configuration/calibration flag, retained without reinterpretation"
+data/processed/records/{record_id}/imu_orientation_reference.json,samples,count,Samples in this run/window
+data/processed/records/{record_id}/imu_orientation_reference.json,schema,text/rule,Saved method/reference/configuration definition stated by the value
+data/processed/records/{record_id}/optical_geometry_fixed.npz,csv_timestamp_matches,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/records/{record_id}/optical_geometry_fixed.npz,frame,index,Native optical frame number
+data/processed/records/{record_id}/optical_geometry_fixed.npz,optical_epoch_ms,ms,Time or time residual in the coordinate indicated by the field name
+data/processed/records/{record_id}/optical_geometry_fixed.npz,optical_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/records/{record_id}/optical_geometry_fixed.npz,pose_valid,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/records/{record_id}/optical_geometry_fixed.npz,position_global_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/records/{record_id}/optical_geometry_fixed.npz,problem_reason_bits,bitmask,1 pose; 2 time; 4 jump; 8 support; 16 geometry; 32 annotated exclusion
+data/processed/records/{record_id}/optical_geometry_fixed.npz,quaternion_xyzw,dimensionless,XYZW unit quaternion component/array in the file-family reference frame
+data/processed/records/{record_id}/optical_geometry_fixed.npz,raw_marker_residual_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/records/{record_id}/optical_geometry_fixed.npz,raw_support,boolean,At least three noncollinear measured optical markers under the saved support rule
+data/processed/records/{record_id}/optical_geometry_fixed.npz,raw_visible_count,count,Number of measured visible markers
+data/processed/records/{record_id}/optical_geometry_fixed.npz,template_local_mm,mm,4x3 rigid-body marker template in local axes
+data/processed/records/{record_id}/optical_geometry_fixed.npz,template_train_frames,index,180 actual optical frame numbers used to estimate the template
+data/processed/records/{record_id}/optical_geometry_moving.npz,csv_timestamp_matches,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/records/{record_id}/optical_geometry_moving.npz,frame,index,Native optical frame number
+data/processed/records/{record_id}/optical_geometry_moving.npz,optical_epoch_ms,ms,Time or time residual in the coordinate indicated by the field name
+data/processed/records/{record_id}/optical_geometry_moving.npz,optical_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/records/{record_id}/optical_geometry_moving.npz,pose_valid,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/records/{record_id}/optical_geometry_moving.npz,position_global_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/records/{record_id}/optical_geometry_moving.npz,problem_reason_bits,bitmask,1 pose; 2 time; 4 jump; 8 support; 16 geometry; 32 annotated exclusion
+data/processed/records/{record_id}/optical_geometry_moving.npz,quaternion_xyzw,dimensionless,XYZW unit quaternion component/array in the file-family reference frame
+data/processed/records/{record_id}/optical_geometry_moving.npz,raw_marker_residual_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/records/{record_id}/optical_geometry_moving.npz,raw_support,boolean,At least three noncollinear measured optical markers under the saved support rule
+data/processed/records/{record_id}/optical_geometry_moving.npz,raw_visible_count,count,Number of measured visible markers
+data/processed/records/{record_id}/optical_geometry_moving.npz,template_local_mm,mm,4x3 rigid-body marker template in local axes
+data/processed/records/{record_id}/optical_geometry_moving.npz,template_train_frames,index,180 actual optical frame numbers used to estimate the template
+data/processed/records/{record_id}/optical_native_derivatives.npz,finite_spatial_omega_mask,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/records/{record_id}/optical_native_derivatives.npz,formal_valid_mask,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/records/{record_id}/optical_native_derivatives.npz,frame,index,Native optical frame number
+data/processed/records/{record_id}/optical_native_derivatives.npz,linear_velocity_mm_s,mm/s,Optical linear velocity in Tracker0 axes; suffix gives aggregation
+data/processed/records/{record_id}/optical_native_derivatives.npz,optical_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/records/{record_id}/optical_native_derivatives.npz,spatial_omega_deg_s,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/processed/records/{record_id}/optical_native_derivatives.npz,task_mask,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,block,index,"Experimental round, 1 or 2"
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,expert,identifier,"ExpertA or ExpertB, the practitioner"
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,fit_rms_fixed_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,fit_rms_moving_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,fit_valid_fixed,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,fit_valid_moving,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,frame,index,Native optical frame number
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,jump_flag,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,label_swap_suspect_fixed,boolean,Archived fixed-body marker identity-ambiguity diagnostic; not a verified swap
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,label_swap_suspect_moving,boolean,Archived moving-body marker identity-ambiguity diagnostic; not a verified swap
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,markers_fixed,count,Number of visible measured markers for fixed/moving rigid body
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,markers_moving,count,Number of visible measured markers for fixed/moving rigid body
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,material,identifier,Specimen P1/P3/P2/P4
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,max_edge_error_fixed_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,max_edge_error_moving_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,optical_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,pose_valid_fixed,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,pose_valid_moving,boolean,Saved diagnostic/eligibility flag; layer-specific rules in data_dictionary.md; no new certification
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,q_w,dimensionless,XYZW unit quaternion component/array in the file-family reference frame
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,q_x,dimensionless,XYZW unit quaternion component/array in the file-family reference frame
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,q_y,dimensionless,XYZW unit quaternion component/array in the file-family reference frame
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,q_z,dimensionless,XYZW unit quaternion component/array in the file-family reference frame
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,reason_bits_fixed,bitmask,"Original quality flags: 1 pose,2 time,4 jump,8 support,16 geometry,32 annotated exclusion"
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,reason_bits_moving,bitmask,"Original quality flags: 1 pose,2 time,4 jump,8 support,16 geometry,32 annotated exclusion"
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,relative_x_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,relative_y_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,relative_z_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,repeat,index,"Repetition within its condition; 1/2 for manipulation, 1/2/3 for material trials"
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,triangle_sine_fixed,dimensionless,Largest supported visible-marker triangle sine (noncollinearity diagnostic)
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,triangle_sine_moving,dimensionless,Largest supported visible-marker triangle sine (noncollinearity diagnostic)
+data/processed/records/{record_id}/optical_qualified_poses.csv.gz,valid,boolean,Validity at this processing layer; see file-family definition
+data/processed/task_profiles/{record_id}.npz,n,count,Supported native samples per task bin
+data/processed/task_profiles/{record_id}.npz,p,mm,101x3 task-bin mean relative position in Tracker0 axes
+data/processed/task_profiles/{record_id}.npz,q,dimensionless,101x4 task-bin mean relative rotation XYZW
+data/processed/task_profiles/{record_id}.npz,w,deg/s,101x3 task-bin spatial angular velocity expressed through the reference rotation
+data/raw/material/{trial_id}/material_measured_columns.csv,d_rel_m,m,Relative indentation from shared stable preload reference
+data/raw/material/{trial_id}/material_measured_columns.csv,fit_input_valid,boolean,"Saved recorder input validity, 1 accepted"
+data/raw/material/{trial_id}/material_measured_columns.csv,replay_state,category,Replay state in material recorder
+data/raw/material/{trial_id}/material_measured_columns.csv,timestamp,Unix s,Software timestamp
+data/raw/material/{trial_id}/replay_measured_columns.csv,controller_measured_z,N,Controller measured positive compression
+data/raw/material/{trial_id}/replay_measured_columns.csv,force_time,s,Time since formal force-curve start
+data/raw/material/{trial_id}/replay_measured_columns.csv,state,category,Recorder replay state; curves select TRACKING
+data/raw/material/{trial_id}/replay_measured_columns.csv,timestamp,Unix s,Software timestamp
+data/raw/records/{record_id}/ati/decoded.csv,bias_id,index,Saved tare index
+data/raw/records/{record_id}/ati/decoded.csv,ft_sequence,counter,ATI force/torque counter; 7000 ticks/s
+data/raw/records/{record_id}/ati/decoded.csv,fx_N,N,Force in stated frame/sign; down/compression fields are positive compression
+data/raw/records/{record_id}/ati/decoded.csv,fy_N,N,Force in stated frame/sign; down/compression fields are positive compression
+data/raw/records/{record_id}/ati/decoded.csv,fz_N,N,Force in stated frame/sign; down/compression fields are positive compression
+data/raw/records/{record_id}/ati/decoded.csv,host_elapsed_sec,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/raw/records/{record_id}/ati/decoded.csv,host_receive_monotonic_ns,ns,Original timestamp in the named monotonic/Unix clock (see time definitions)
+data/raw/records/{record_id}/ati/decoded.csv,host_receive_unix_ns,ns,Original timestamp in the named monotonic/Unix clock (see time definitions)
+data/raw/records/{record_id}/ati/decoded.csv,raw_fx_count,count,Signed acquisition digital count for the named sensor axis; conversion in data_dictionary.md
+data/raw/records/{record_id}/ati/decoded.csv,raw_fy_count,count,Signed acquisition digital count for the named sensor axis; conversion in data_dictionary.md
+data/raw/records/{record_id}/ati/decoded.csv,raw_fz_count,count,Signed acquisition digital count for the named sensor axis; conversion in data_dictionary.md
+data/raw/records/{record_id}/ati/decoded.csv,raw_tx_count,count,Signed acquisition digital count for the named sensor axis; conversion in data_dictionary.md
+data/raw/records/{record_id}/ati/decoded.csv,raw_ty_count,count,Signed acquisition digital count for the named sensor axis; conversion in data_dictionary.md
+data/raw/records/{record_id}/ati/decoded.csv,raw_tz_count,count,Signed acquisition digital count for the named sensor axis; conversion in data_dictionary.md
+data/raw/records/{record_id}/ati/decoded.csv,rdt_sequence,counter,ATI packet counter
+data/raw/records/{record_id}/ati/decoded.csv,sequence_delta,counter increment,ATI packet sequence difference
+data/raw/records/{record_id}/ati/decoded.csv,status,category,Original validity/processing or decomposition status; not a measured signal
+data/raw/records/{record_id}/ati/decoded.csv,tx_Nm,N m,Signed ATI moment in device axes; zeroed_ subtracts saved tare
+data/raw/records/{record_id}/ati/decoded.csv,ty_Nm,N m,Signed ATI moment in device axes; zeroed_ subtracts saved tare
+data/raw/records/{record_id}/ati/decoded.csv,tz_Nm,N m,Signed ATI moment in device axes; zeroed_ subtracts saved tare
+data/raw/records/{record_id}/ati/decoded.csv,valid,boolean,Validity at this processing layer; see file-family definition
+data/raw/records/{record_id}/ati/decoded.csv,zeroed_fx_N,N,Force in stated frame/sign; down/compression fields are positive compression
+data/raw/records/{record_id}/ati/decoded.csv,zeroed_fy_N,N,Force in stated frame/sign; down/compression fields are positive compression
+data/raw/records/{record_id}/ati/decoded.csv,zeroed_fz_N,N,Force in stated frame/sign; down/compression fields are positive compression
+data/raw/records/{record_id}/ati/decoded.csv,zeroed_tx_Nm,N m,Signed ATI moment in device axes; zeroed_ subtracts saved tare
+data/raw/records/{record_id}/ati/decoded.csv,zeroed_ty_Nm,N m,Signed ATI moment in device axes; zeroed_ subtracts saved tare
+data/raw/records/{record_id}/ati/decoded.csv,zeroed_tz_Nm,N m,Signed ATI moment in device axes; zeroed_ subtracts saved tare
+data/raw/records/{record_id}/ati/packets.csv,host_receive_monotonic_ns,ns,Original timestamp in the named monotonic/Unix clock (see time definitions)
+data/raw/records/{record_id}/ati/packets.csv,host_receive_unix_ns,ns,Original timestamp in the named monotonic/Unix clock (see time definitions)
+data/raw/records/{record_id}/ati/packets.csv,length,byte,Payload length
+data/raw/records/{record_id}/ati/packets.csv,offset,byte,Payload offset in associated binary stream
+data/raw/records/{record_id}/imu/blocks.csv,host_receive_monotonic_ns,ns,Original timestamp in the named monotonic/Unix clock (see time definitions)
+data/raw/records/{record_id}/imu/blocks.csv,host_receive_unix_ns,ns,Original timestamp in the named monotonic/Unix clock (see time definitions)
+data/raw/records/{record_id}/imu/blocks.csv,length,byte,Payload length
+data/raw/records/{record_id}/imu/blocks.csv,offset,byte,Payload offset in associated binary stream
+data/raw/records/{record_id}/imu/decoded.csv,ax_g,g,IMU acceleration along named device axis
+data/raw/records/{record_id}/imu/decoded.csv,ay_g,g,IMU acceleration along named device axis
+data/raw/records/{record_id}/imu/decoded.csv,az_g,g,IMU acceleration along named device axis
+data/raw/records/{record_id}/imu/decoded.csv,device_datetime_unmapped,device calendar text,Unmapped sample datetime; use native elapsed coordinate for analysis
+data/raw/records/{record_id}/imu/decoded.csv,host_elapsed_sec,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/raw/records/{record_id}/imu/decoded.csv,host_receive_monotonic_ns,ns,Original timestamp in the named monotonic/Unix clock (see time definitions)
+data/raw/records/{record_id}/imu/decoded.csv,host_receive_unix_ns,ns,Original timestamp in the named monotonic/Unix clock (see time definitions)
+data/raw/records/{record_id}/imu/decoded.csv,pitch_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/raw/records/{record_id}/imu/decoded.csv,raw_ax_count,count,Signed acquisition digital count for the named sensor axis; conversion in data_dictionary.md
+data/raw/records/{record_id}/imu/decoded.csv,raw_ay_count,count,Signed acquisition digital count for the named sensor axis; conversion in data_dictionary.md
+data/raw/records/{record_id}/imu/decoded.csv,raw_az_count,count,Signed acquisition digital count for the named sensor axis; conversion in data_dictionary.md
+data/raw/records/{record_id}/imu/decoded.csv,raw_offset,byte,28-byte IMU sample offset
+data/raw/records/{record_id}/imu/decoded.csv,raw_pitch_count,count,Signed acquisition digital count for the named sensor axis; conversion in data_dictionary.md
+data/raw/records/{record_id}/imu/decoded.csv,raw_roll_count,count,Signed acquisition digital count for the named sensor axis; conversion in data_dictionary.md
+data/raw/records/{record_id}/imu/decoded.csv,raw_wx_count,count,Signed acquisition digital count for the named sensor axis; conversion in data_dictionary.md
+data/raw/records/{record_id}/imu/decoded.csv,raw_wy_count,count,Signed acquisition digital count for the named sensor axis; conversion in data_dictionary.md
+data/raw/records/{record_id}/imu/decoded.csv,raw_wz_count,count,Signed acquisition digital count for the named sensor axis; conversion in data_dictionary.md
+data/raw/records/{record_id}/imu/decoded.csv,raw_yaw_count,count,Signed acquisition digital count for the named sensor axis; conversion in data_dictionary.md
+data/raw/records/{record_id}/imu/decoded.csv,roll_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/raw/records/{record_id}/imu/decoded.csv,segment,index/category,Acquisition segment in raw IMU; early/middle/late in temporal results
+data/raw/records/{record_id}/imu/decoded.csv,wx_deg_s,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/raw/records/{record_id}/imu/decoded.csv,wy_deg_s,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/raw/records/{record_id}/imu/decoded.csv,wz_deg_s,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/raw/records/{record_id}/imu/decoded.csv,yaw_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker0.csv,ArToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker0.csv,AxToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker0.csv,AyToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker0.csv,AzToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker0.csv,EAxToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker0.csv,EAyToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker0.csv,EAzToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker0.csv,EVxToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker0.csv,EVyToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker0.csv,EVzToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker0.csv,ExToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker0.csv,EyToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker0.csv,EzToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker0.csv,QwToGlobal1,dimensionless,Vendor XYZW rigid-local-to-world quaternion component
+data/raw/records/{record_id}/nokov/Tracker0.csv,QxToGlobal1,dimensionless,Vendor XYZW rigid-local-to-world quaternion component
+data/raw/records/{record_id}/nokov/Tracker0.csv,QyToGlobal1,dimensionless,Vendor XYZW rigid-local-to-world quaternion component
+data/raw/records/{record_id}/nokov/Tracker0.csv,QzToGlobal1,dimensionless,Vendor XYZW rigid-local-to-world quaternion component
+data/raw/records/{record_id}/nokov/Tracker0.csv,Segmentlength1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker0.csv,Timestamp,ms,Optical epoch timestamp
+data/raw/records/{record_id}/nokov/Tracker0.csv,VrToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker0.csv,VxToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker0.csv,VyToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker0.csv,VzToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker0.csv,XToGlobal1,mm,Vendor world-coordinate position component
+data/raw/records/{record_id}/nokov/Tracker0.csv,YToGlobal1,mm,Vendor world-coordinate position component
+data/raw/records/{record_id}/nokov/Tracker0.csv,ZToGlobal1,mm,Vendor world-coordinate position component
+data/raw/records/{record_id}/nokov/Tracker0.csv,frame,index,Native optical frame number
+data/raw/records/{record_id}/nokov/Tracker0.csv,unused_trailing_column,none,Empty vendor trailing delimiter; no scientific variable
+data/raw/records/{record_id}/nokov/Tracker0.trc,Frame#,index,Native optical frame number
+data/raw/records/{record_id}/nokov/Tracker0.trc,Marker*_X/Y/Z,mm,Measured / vendor reconstructed marker position in optical world axes respectively
+data/raw/records/{record_id}/nokov/Tracker0.trc,RCalc::Marker*_X/Y/Z,mm,Measured / vendor reconstructed marker position in optical world axes respectively
+data/raw/records/{record_id}/nokov/Tracker0.trc,Time,s,Native optical elapsed coordinate from TRC
+data/raw/records/{record_id}/nokov/Tracker0.trc,Timestamp,ms,Optical epoch timestamp
+data/raw/records/{record_id}/nokov/Tracker1.csv,ArToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker1.csv,AxToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker1.csv,AyToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker1.csv,AzToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker1.csv,EAxToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker1.csv,EAyToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker1.csv,EAzToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker1.csv,EVxToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker1.csv,EVyToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker1.csv,EVzToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker1.csv,ExToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker1.csv,EyToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker1.csv,EzToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker1.csv,QwToGlobal1,dimensionless,Vendor XYZW rigid-local-to-world quaternion component
+data/raw/records/{record_id}/nokov/Tracker1.csv,QxToGlobal1,dimensionless,Vendor XYZW rigid-local-to-world quaternion component
+data/raw/records/{record_id}/nokov/Tracker1.csv,QyToGlobal1,dimensionless,Vendor XYZW rigid-local-to-world quaternion component
+data/raw/records/{record_id}/nokov/Tracker1.csv,QzToGlobal1,dimensionless,Vendor XYZW rigid-local-to-world quaternion component
+data/raw/records/{record_id}/nokov/Tracker1.csv,Segmentlength1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker1.csv,Timestamp,ms,Optical epoch timestamp
+data/raw/records/{record_id}/nokov/Tracker1.csv,VrToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker1.csv,VxToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker1.csv,VyToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker1.csv,VzToGlobal1,unknown; unused,Vendor-derived field not consumed by the analysis; see data_dictionary.md
+data/raw/records/{record_id}/nokov/Tracker1.csv,XToGlobal1,mm,Vendor world-coordinate position component
+data/raw/records/{record_id}/nokov/Tracker1.csv,YToGlobal1,mm,Vendor world-coordinate position component
+data/raw/records/{record_id}/nokov/Tracker1.csv,ZToGlobal1,mm,Vendor world-coordinate position component
+data/raw/records/{record_id}/nokov/Tracker1.csv,frame,index,Native optical frame number
+data/raw/records/{record_id}/nokov/Tracker1.csv,unused_trailing_column,none,Empty vendor trailing delimiter; no scientific variable
+data/raw/records/{record_id}/nokov/Tracker1.trc,Frame#,index,Native optical frame number
+data/raw/records/{record_id}/nokov/Tracker1.trc,Marker*_X/Y/Z,mm,Measured / vendor reconstructed marker position in optical world axes respectively
+data/raw/records/{record_id}/nokov/Tracker1.trc,RCalc::Marker*_X/Y/Z,mm,Measured / vendor reconstructed marker position in optical world axes respectively
+data/raw/records/{record_id}/nokov/Tracker1.trc,Time,s,Native optical elapsed coordinate from TRC
+data/raw/records/{record_id}/nokov/Tracker1.trc,Timestamp,ms,Optical epoch timestamp
+data/raw/records/{record_id}/nokov/Unnamed.trc,Frame#,index,Native optical frame number
+data/raw/records/{record_id}/nokov/Unnamed.trc,Marker*_X/Y/Z,mm,Measured / vendor reconstructed marker position in optical world axes respectively
+data/raw/records/{record_id}/nokov/Unnamed.trc,RCalc::Marker*_X/Y/Z,mm,Measured / vendor reconstructed marker position in optical world axes respectively
+data/raw/records/{record_id}/nokov/Unnamed.trc,Time,s,Native optical elapsed coordinate from TRC
+data/raw/records/{record_id}/nokov/Unnamed.trc,Timestamp,ms,Optical epoch timestamp
+data/results/figure_tables/Fig2_mean_cycle_values.csv,block,index,"Experimental round, 1 or 2"
+data/results/figure_tables/Fig2_mean_cycle_values.csv,channel,category,Fx/Fy/Fz in N; Tx/Ty/Tz in N m; wx/wy/wz in deg/s
+data/results/figure_tables/Fig2_mean_cycle_values.csv,expert,identifier,"ExpertA or ExpertB, the practitioner"
+data/results/figure_tables/Fig2_mean_cycle_values.csv,material,identifier,Specimen P1/P3/P2/P4
+data/results/figure_tables/Fig2_mean_cycle_values.csv,mean,see unit / channel,Equal-cycle recording-mean waveform; temporal feature tables: waveform center
+data/results/figure_tables/Fig2_mean_cycle_values.csv,modality,category,ATI or IMU signal family
+data/results/figure_tables/Fig2_mean_cycle_values.csv,n_cycles,count,Accepted cycles contributing to this progress-bin mean
+data/results/figure_tables/Fig2_mean_cycle_values.csv,phase,dimensionless,"Cycle progress, 0 through 1 in steps of .01"
+data/results/figure_tables/Fig2_mean_cycle_values.csv,q10,see unit,10th percentile across supported cycles at this progress point
+data/results/figure_tables/Fig2_mean_cycle_values.csv,q90,see unit,90th percentile across supported cycles at this progress point
+data/results/figure_tables/Fig2_mean_cycle_values.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/results/figure_tables/Fig2_mean_cycle_values.csv,repeat,index,"Repetition within its condition; 1/2 for manipulation, 1/2/3 for material trials"
+data/results/figure_tables/Fig2_mean_cycle_values.csv,unit,metadata,Physical unit of the scalar value
+data/results/figure_tables/Fig2_native_path_IDs.csv,background_rows,count,Number of objects named by this field; not an independent participant count
+data/results/figure_tables/Fig2_native_path_IDs.csv,continuous_runs,count,Number of objects named by this field; not an independent participant count
+data/results/figure_tables/Fig2_native_path_IDs.csv,end_host_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/results/figure_tables/Fig2_native_path_IDs.csv,group,category,force/moment/gyro for displayed native-state samples
+data/results/figure_tables/Fig2_native_path_IDs.csv,native_samples,count,Number of objects named by this field; not an independent participant count
+data/results/figure_tables/Fig2_native_path_IDs.csv,panel,label,Figure subpanel
+data/results/figure_tables/Fig2_native_path_IDs.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/results/figure_tables/Fig2_native_path_IDs.csv,segment,index/category,Acquisition segment in raw IMU; early/middle/late in temporal results
+data/results/figure_tables/Fig2_native_path_IDs.csv,start_host_s,s,"Time/duration in the named coordinate; software, native and progress coordinates are distinct"
+data/results/figure_tables/Fig3_all_spatial_pair_IDs.csv,comparison,category,"expert, repeat or material; matching rules in data_dictionary.md"
+data/results/figure_tables/Fig3_all_spatial_pair_IDs.csv,cycle_orientation_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/results/figure_tables/Fig3_all_spatial_pair_IDs.csv,cycle_position_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/results/figure_tables/Fig3_all_spatial_pair_IDs.csv,cycles_a,count,Number of objects named by this field; not an independent participant count
+data/results/figure_tables/Fig3_all_spatial_pair_IDs.csv,cycles_b,count,Number of objects named by this field; not an independent participant count
+data/results/figure_tables/Fig3_all_spatial_pair_IDs.csv,pair_id,identifier,Both recording IDs joined by |
+data/results/figure_tables/Fig3_all_spatial_pair_IDs.csv,pair_index,index,"Display order of matched pairs, not an independent subject index"
+data/results/figure_tables/Fig3_all_spatial_pair_IDs.csv,record_a,identifier,First member of a matched recording pair
+data/results/figure_tables/Fig3_all_spatial_pair_IDs.csv,record_b,identifier,Second member of a matched recording pair
+data/results/figure_tables/Fig3_all_spatial_pair_IDs.csv,task_common_bins,count,Jointly supported task bins for the figure pair
+data/results/figure_tables/Fig3_all_spatial_pair_IDs.csv,task_orientation_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/results/figure_tables/Fig3_all_spatial_pair_IDs.csv,task_position_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/results/figure_tables/Fig3_mean_cycle_rotation_logs.csv,log_mean_cycle_x_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/results/figure_tables/Fig3_mean_cycle_rotation_logs.csv,log_mean_cycle_y_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/results/figure_tables/Fig3_mean_cycle_rotation_logs.csv,log_mean_cycle_z_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/results/figure_tables/Fig3_mean_cycle_rotation_logs.csv,phase,dimensionless,"Cycle progress, 0 through 1 in steps of .01"
+data/results/figure_tables/Fig3_mean_cycle_rotation_logs.csv,quaternion_reconstruction_max_error,dimensionless,XYZW unit quaternion component/array in the file-family reference frame
+data/results/figure_tables/Fig3_mean_cycle_rotation_logs.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/results/figure_tables/Fig3_mean_cycle_rotation_logs.csv,reference,text/rule,Saved method/reference/configuration definition stated by the value
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,cycle_mean_q_w,dimensionless,XYZW unit quaternion component/array in the file-family reference frame
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,cycle_mean_q_x,dimensionless,XYZW unit quaternion component/array in the file-family reference frame
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,cycle_mean_q_y,dimensionless,XYZW unit quaternion component/array in the file-family reference frame
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,cycle_mean_q_z,dimensionless,XYZW unit quaternion component/array in the file-family reference frame
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,cycles,count,Accepted optical cycles used by the recording mean
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,dx_mm_mean,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,dx_mm_q25,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,dx_mm_q75,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,dy_mm_mean,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,dy_mm_q25,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,dy_mm_q75,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,dz_mm_mean,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,dz_mm_q25,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,dz_mm_q75,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,phase,dimensionless,"Cycle progress, 0 through 1 in steps of .01"
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,rotvec_x_mean_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,rotvec_x_q25_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,rotvec_x_q75_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,rotvec_y_mean_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,rotvec_y_q25_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,rotvec_y_q75_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,rotvec_z_mean_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,rotvec_z_q25_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,rotvec_z_q75_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,vx_mm_s_mean,mm/s,Optical linear velocity in Tracker0 axes; suffix gives aggregation
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,vx_mm_s_q25,mm/s,Optical linear velocity in Tracker0 axes; suffix gives aggregation
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,vx_mm_s_q75,mm/s,Optical linear velocity in Tracker0 axes; suffix gives aggregation
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,vy_mm_s_mean,mm/s,Optical linear velocity in Tracker0 axes; suffix gives aggregation
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,vy_mm_s_q25,mm/s,Optical linear velocity in Tracker0 axes; suffix gives aggregation
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,vy_mm_s_q75,mm/s,Optical linear velocity in Tracker0 axes; suffix gives aggregation
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,vz_mm_s_mean,mm/s,Optical linear velocity in Tracker0 axes; suffix gives aggregation
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,vz_mm_s_q25,mm/s,Optical linear velocity in Tracker0 axes; suffix gives aggregation
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,vz_mm_s_q75,mm/s,Optical linear velocity in Tracker0 axes; suffix gives aggregation
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,wx_spatial_deg_s_mean,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,wx_spatial_deg_s_q25,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,wx_spatial_deg_s_q75,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,wy_spatial_deg_s_mean,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,wy_spatial_deg_s_q25,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,wy_spatial_deg_s_q75,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,wz_spatial_deg_s_mean,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,wz_spatial_deg_s_q25,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/results/figure_tables/Fig3_spatial_cycle_values.csv,wz_spatial_deg_s_q75,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/results/figure_tables/Fig4_dominance_counts.csv,channel,category,Fx/Fy/Fz in N; Tx/Ty/Tz in N m; wx/wy/wz in deg/s
+data/results/figure_tables/Fig4_dominance_counts.csv,displayed_most_frequent_term,category,MSE term with highest dominance count in the displayed channel
+data/results/figure_tables/Fig4_dominance_counts.csv,dominant_amplitude,count,Pairs with amplitude MSE uniquely largest
+data/results/figure_tables/Fig4_dominance_counts.csv,dominant_center,count,Pairs with center MSE uniquely largest
+data/results/figure_tables/Fig4_dominance_counts.csv,dominant_shape,count,Pairs with shape MSE uniquely largest
+data/results/figure_tables/Fig4_dominance_counts.csv,exact_ties,count,Pairs without a unique maximum MSE term
+data/results/figure_tables/Fig4_dominance_counts.csv,n_practitioner_pairs,count,Number of objects named by this field; not an independent participant count
+data/results/figure_tables/Fig4_dominance_counts.csv,rule,rule,Exact dominance/counting rule stated in the value
+data/results/figure_tables/Fig6_all_contrast_summary.csv,amplitude_decreases,count,Records with the indicated sign of centered-RMS amplitude change
+data/results/figure_tables/Fig6_all_contrast_summary.csv,amplitude_increases,count,Records with the indicated sign of centered-RMS amplitude change
+data/results/figure_tables/Fig6_all_contrast_summary.csv,channel,category,Fx/Fy/Fz in N; Tx/Ty/Tz in N m; wx/wy/wz in deg/s
+data/results/figure_tables/Fig6_all_contrast_summary.csv,contrast,category,"middle-early, late-middle or late-early"
+data/results/figure_tables/Fig6_all_contrast_summary.csv,median_amplitude_change,deg/s,Median centered-RMS amplitude change over the 32 record comparisons
+data/results/figure_tables/Fig6_all_contrast_summary.csv,median_center_change,deg/s,Median mean-level change over the 32 record comparisons
+data/results/figure_tables/Fig6_all_contrast_summary.csv,median_shape_RMS,dimensionless,Median standardized signed-shape distance over 32 record comparisons
+data/results/figure_tables/Fig6_all_contrast_summary.csv,unit,metadata,Physical unit of the scalar value
+data/results/figure_tables/Fig6_late_early_all_components.csv,amplitude_MSE,see squared_unit,Squared centered-RMS-amplitude difference
+data/results/figure_tables/Fig6_late_early_all_components.csv,amplitude_a,see unit,First waveform centered RMS on common finite support
+data/results/figure_tables/Fig6_late_early_all_components.csv,amplitude_b,see unit,Second waveform centered RMS on common finite support
+data/results/figure_tables/Fig6_late_early_all_components.csv,amplitude_fraction,dimensionless,Amplitude MSE / pair distance squared
+data/results/figure_tables/Fig6_late_early_all_components.csv,block,index,"Experimental round, 1 or 2"
+data/results/figure_tables/Fig6_late_early_all_components.csv,center_MSE,see squared_unit,Squared center difference
+data/results/figure_tables/Fig6_late_early_all_components.csv,center_fraction,dimensionless,Center MSE / pair distance squared
+data/results/figure_tables/Fig6_late_early_all_components.csv,channel,category,Fx/Fy/Fz in N; Tx/Ty/Tz in N m; wx/wy/wz in deg/s
+data/results/figure_tables/Fig6_late_early_all_components.csv,contrast,category,"middle-early, late-middle or late-early"
+data/results/figure_tables/Fig6_late_early_all_components.csv,delta_amplitude_b_minus_a,see unit,Second minus first common-support centered RMS
+data/results/figure_tables/Fig6_late_early_all_components.csv,delta_mean_b_minus_a,see unit,Second minus first common-support waveform center
+data/results/figure_tables/Fig6_late_early_all_components.csv,distance,see unit,RMS difference of complete recording-mean waveforms
+data/results/figure_tables/Fig6_late_early_all_components.csv,distance_squared,see squared_unit,Mean squared difference of the pair of waveforms
+data/results/figure_tables/Fig6_late_early_all_components.csv,expert,identifier,"ExpertA or ExpertB, the practitioner"
+data/results/figure_tables/Fig6_late_early_all_components.csv,identity_error,see squared_unit,Sum of three MSE terms minus pair distance squared
+data/results/figure_tables/Fig6_late_early_all_components.csv,material,identifier,Specimen P1/P3/P2/P4
+data/results/figure_tables/Fig6_late_early_all_components.csv,mean_a,see unit,First waveform mean on common finite support
+data/results/figure_tables/Fig6_late_early_all_components.csv,mean_b,see unit,Second waveform mean on common finite support
+data/results/figure_tables/Fig6_late_early_all_components.csv,n_common,count,Finite common phase points
+data/results/figure_tables/Fig6_late_early_all_components.csv,n_cycles_a,count,Number of objects named by this field; not an independent participant count
+data/results/figure_tables/Fig6_late_early_all_components.csv,n_cycles_b,count,Number of objects named by this field; not an independent participant count
+data/results/figure_tables/Fig6_late_early_all_components.csv,n_shared_nonfinite,count,Shared phase keys excluded for nonfinite values
+data/results/figure_tables/Fig6_late_early_all_components.csv,n_union,count,Union of available phase keys
+data/results/figure_tables/Fig6_late_early_all_components.csv,near_zero_tolerance,see unit,"Original 64*epsilon*max(1,magnitudes) conditioning threshold"
+data/results/figure_tables/Fig6_late_early_all_components.csv,phase_ids,dimensionless list,Semicolon-separated phase keys in finite common support
+data/results/figure_tables/Fig6_late_early_all_components.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/results/figure_tables/Fig6_late_early_all_components.csv,repeat,index,"Repetition within its condition; 1/2 for manipulation, 1/2/3 for material trials"
+data/results/figure_tables/Fig6_late_early_all_components.csv,rho,dimensionless,Mean product of two standardized signed shapes on common support
+data/results/figure_tables/Fig6_late_early_all_components.csv,segment_a,category,Earlier comparison segment
+data/results/figure_tables/Fig6_late_early_all_components.csv,segment_b,category,Later comparison segment
+data/results/figure_tables/Fig6_late_early_all_components.csv,shape_MSE,see squared_unit,Product of amplitudes multiplied by standardized-shape distance squared
+data/results/figure_tables/Fig6_late_early_all_components.csv,shape_RMS_dimensionless,dimensionless,RMS difference of standardized signed shapes on common support
+data/results/figure_tables/Fig6_late_early_all_components.csv,shape_fraction,dimensionless,Shape MSE / pair distance squared
+data/results/figure_tables/Fig6_late_early_all_components.csv,squared_unit,metadata,Squared physical unit of the MSE components
+data/results/figure_tables/Fig6_late_early_all_components.csv,status,category,Original validity/processing or decomposition status; not a measured signal
+data/results/figure_tables/Fig6_late_early_all_components.csv,unit,metadata,Physical unit of the scalar value
+data/results/figure_tables/Fig6_late_early_all_components.csv,weight_rule,rule,Equal weight at each finite common phase point
+data/results/figure_tables/Fig6_period_mean_examples.csv,channel,category,Fx/Fy/Fz in N; Tx/Ty/Tz in N m; wx/wy/wz in deg/s
+data/results/figure_tables/Fig6_period_mean_examples.csv,mean_deg_s,deg/s,Angular velocity in the named device or spatial/reference axes; suffix gives aggregation
+data/results/figure_tables/Fig6_period_mean_examples.csv,n_cycles,count,Accepted cycles contributing to this progress-bin mean
+data/results/figure_tables/Fig6_period_mean_examples.csv,phase,dimensionless,"Cycle progress, 0 through 1 in steps of .01"
+data/results/figure_tables/Fig6_period_mean_examples.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/results/figure_tables/Fig6_period_mean_examples.csv,third,index,"Equal-duration formal interval: 1 early, 2 middle, 3 late; midpoint assignment"
+data/results/material/trial_slopes.csv,K_12_18_N_per_mm,N/mm,Saved per-trial stiffness estimate over 12–18 N; fitting not rerun
+data/results/material/trial_slopes.csv,phantom,identifier,Material specimen P1/P3/P2/P4
+data/results/material/trial_slopes.csv,repeat,index,"Repetition within its condition; 1/2 for manipulation, 1/2/3 for material trials"
+data/results/optical/cycle_pair_distances.csv,comparison,category,"expert, repeat or material; matching rules in data_dictionary.md"
+data/results/optical/cycle_pair_distances.csv,cycle_mean_SO3_shape_RMS_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/results/optical/cycle_pair_distances.csv,cycle_mean_position_shape_RMS_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/results/optical/cycle_pair_distances.csv,cycles_a,count,Number of objects named by this field; not an independent participant count
+data/results/optical/cycle_pair_distances.csv,cycles_b,count,Number of objects named by this field; not an independent participant count
+data/results/optical/cycle_pair_distances.csv,record_a,identifier,First member of a matched recording pair
+data/results/optical/cycle_pair_distances.csv,record_b,identifier,Second member of a matched recording pair
+data/results/optical/task_pair_distances.csv,SO3_P95_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/results/optical/task_pair_distances.csv,SO3_RMS_deg,deg,Angle/rotation-vector/geodesic statistic specified by name; coordinate reference in data_dictionary.md
+data/results/optical/task_pair_distances.csv,block,index,"Experimental round, 1 or 2"
+data/results/optical/task_pair_distances.csv,common_bins,count,Jointly supported optical task-progress bins in a pair
+data/results/optical/task_pair_distances.csv,comparison,category,"expert, repeat or material; matching rules in data_dictionary.md"
+data/results/optical/task_pair_distances.csv,expert_a,identifier/index,Experimental factor for pair member a
+data/results/optical/task_pair_distances.csv,expert_b,identifier/index,Experimental factor for pair member b
+data/results/optical/task_pair_distances.csv,material_a,identifier/index,Experimental factor for pair member a
+data/results/optical/task_pair_distances.csv,material_b,identifier/index,Experimental factor for pair member b
+data/results/optical/task_pair_distances.csv,position_shape_RMS_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/results/optical/task_pair_distances.csv,position_x_RMS_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/results/optical/task_pair_distances.csv,position_y_RMS_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/results/optical/task_pair_distances.csv,position_z_RMS_mm,mm,Optical position/distance or indentation named by field; reference and statistic in data_dictionary.md
+data/results/optical/task_pair_distances.csv,record_a,identifier,First member of a matched recording pair
+data/results/optical/task_pair_distances.csv,record_b,identifier,Second member of a matched recording pair
+data/results/optical/task_pair_distances.csv,reference_scenario,text/rule,Saved method/reference/configuration definition stated by the value
+data/results/optical/task_pair_distances.csv,repeat_a,identifier/index,Experimental factor for pair member a
+data/results/optical/task_pair_distances.csv,repeat_b,identifier/index,Experimental factor for pair member b
+data/results/quantitative/decomposition_summary.csv,amplitude_MSE_max,see squared_unit,Maximum of per-row values: Squared centered-RMS-amplitude difference
+data/results/quantitative/decomposition_summary.csv,amplitude_MSE_median,see squared_unit,Median of per-row values: Squared centered-RMS-amplitude difference
+data/results/quantitative/decomposition_summary.csv,amplitude_MSE_min,see squared_unit,Minimum of per-row values: Squared centered-RMS-amplitude difference
+data/results/quantitative/decomposition_summary.csv,amplitude_fraction_max,dimensionless,Maximum of per-row values: Amplitude MSE / pair distance squared
+data/results/quantitative/decomposition_summary.csv,amplitude_fraction_median,dimensionless,Median of per-row values: Amplitude MSE / pair distance squared
+data/results/quantitative/decomposition_summary.csv,amplitude_fraction_min,dimensionless,Minimum of per-row values: Amplitude MSE / pair distance squared
+data/results/quantitative/decomposition_summary.csv,center_MSE_max,see squared_unit,Maximum of per-row values: Squared center difference
+data/results/quantitative/decomposition_summary.csv,center_MSE_median,see squared_unit,Median of per-row values: Squared center difference
+data/results/quantitative/decomposition_summary.csv,center_MSE_min,see squared_unit,Minimum of per-row values: Squared center difference
+data/results/quantitative/decomposition_summary.csv,center_fraction_max,dimensionless,Maximum of per-row values: Center MSE / pair distance squared
+data/results/quantitative/decomposition_summary.csv,center_fraction_median,dimensionless,Median of per-row values: Center MSE / pair distance squared
+data/results/quantitative/decomposition_summary.csv,center_fraction_min,dimensionless,Minimum of per-row values: Center MSE / pair distance squared
+data/results/quantitative/decomposition_summary.csv,channel,category,Fx/Fy/Fz in N; Tx/Ty/Tz in N m; wx/wy/wz in deg/s
+data/results/quantitative/decomposition_summary.csv,comparison,category,"expert, repeat or material; matching rules in data_dictionary.md"
+data/results/quantitative/decomposition_summary.csv,largest_amplitude_count,count,Pairs for which this MSE component is the unique strict maximum
+data/results/quantitative/decomposition_summary.csv,largest_center_count,count,Pairs for which this MSE component is the unique strict maximum
+data/results/quantitative/decomposition_summary.csv,largest_shape_count,count,Pairs for which this MSE component is the unique strict maximum
+data/results/quantitative/decomposition_summary.csv,n_pairs,count,Number of objects named by this field; not an independent participant count
+data/results/quantitative/decomposition_summary.csv,rho_max,dimensionless,Maximum of per-row values: Mean product of two standardized signed shapes on common support
+data/results/quantitative/decomposition_summary.csv,rho_median,dimensionless,Median of per-row values: Mean product of two standardized signed shapes on common support
+data/results/quantitative/decomposition_summary.csv,rho_min,dimensionless,Minimum of per-row values: Mean product of two standardized signed shapes on common support
+data/results/quantitative/decomposition_summary.csv,shape_MSE_max,see squared_unit,Maximum of per-row values: Product of amplitudes multiplied by standardized-shape distance squared
+data/results/quantitative/decomposition_summary.csv,shape_MSE_median,see squared_unit,Median of per-row values: Product of amplitudes multiplied by standardized-shape distance squared
+data/results/quantitative/decomposition_summary.csv,shape_MSE_min,see squared_unit,Minimum of per-row values: Product of amplitudes multiplied by standardized-shape distance squared
+data/results/quantitative/decomposition_summary.csv,shape_RMS_dimensionless_max,dimensionless,Maximum of per-row values: RMS difference of standardized signed shapes on common support
+data/results/quantitative/decomposition_summary.csv,shape_RMS_dimensionless_median,dimensionless,Median of per-row values: RMS difference of standardized signed shapes on common support
+data/results/quantitative/decomposition_summary.csv,shape_RMS_dimensionless_min,dimensionless,Minimum of per-row values: RMS difference of standardized signed shapes on common support
+data/results/quantitative/decomposition_summary.csv,shape_fraction_max,dimensionless,Maximum of per-row values: Shape MSE / pair distance squared
+data/results/quantitative/decomposition_summary.csv,shape_fraction_median,dimensionless,Median of per-row values: Shape MSE / pair distance squared
+data/results/quantitative/decomposition_summary.csv,shape_fraction_min,dimensionless,Minimum of per-row values: Shape MSE / pair distance squared
+data/results/quantitative/decomposition_summary.csv,squared_unit,metadata,Squared physical unit of the MSE components
+data/results/quantitative/decomposition_summary.csv,unit,metadata,Physical unit of the scalar value
+data/results/quantitative/material_adjacent_changes.csv,block,index,"Experimental round, 1 or 2"
+data/results/quantitative/material_adjacent_changes.csv,delta,see unit,Feature change from material_from to material_to
+data/results/quantitative/material_adjacent_changes.csv,direction,sign,Sign of the adjacent material change
+data/results/quantitative/material_adjacent_changes.csv,expert,identifier,"ExpertA or ExpertB, the practitioner"
+data/results/quantitative/material_adjacent_changes.csv,feature,category,Named single-record waveform or optical feature
+data/results/quantitative/material_adjacent_changes.csv,material_from,identifier,First specimen in a consecutive mechanical-order comparison
+data/results/quantitative/material_adjacent_changes.csv,material_to,identifier,Second specimen in a consecutive mechanical-order comparison
+data/results/quantitative/material_adjacent_changes.csv,record_ids_from,identifier/list,Public record identifier(s) supporting the result
+data/results/quantitative/material_adjacent_changes.csv,record_ids_to,identifier/list,Public record identifier(s) supporting the result
+data/results/quantitative/material_adjacent_changes.csv,repeat,index,"Repetition within its condition; 1/2 for manipulation, 1/2/3 for material trials"
+data/results/quantitative/material_adjacent_changes.csv,unit,metadata,Physical unit of the scalar value
+data/results/quantitative/material_cell_means.csv,aggregation,rule,Arithmetic mean of the two record features; equal weights
+data/results/quantitative/material_cell_means.csv,block,index,"Experimental round, 1 or 2"
+data/results/quantitative/material_cell_means.csv,expert,identifier,"ExpertA or ExpertB, the practitioner"
+data/results/quantitative/material_cell_means.csv,feature,category,Named single-record waveform or optical feature
+data/results/quantitative/material_cell_means.csv,material,identifier,Specimen P1/P3/P2/P4
+data/results/quantitative/material_cell_means.csv,record_ids,identifier/list,Public record identifier(s) supporting the result
+data/results/quantitative/material_cell_means.csv,repeat_values,see unit,"Two record feature values before arithmetic averaging, separated by ;"
+data/results/quantitative/material_cell_means.csv,unit,metadata,Physical unit of the scalar value
+data/results/quantitative/material_cell_means.csv,value,see unit,"Value of the named feature, with its own support"
+data/results/quantitative/material_endpoint_changes.csv,P1_record_ids,identifier/list,Public record identifier(s) supporting the result
+data/results/quantitative/material_endpoint_changes.csv,P4_record_ids,identifier/list,Public record identifier(s) supporting the result
+data/results/quantitative/material_endpoint_changes.csv,block,index,"Experimental round, 1 or 2"
+data/results/quantitative/material_endpoint_changes.csv,delta_P4_minus_P1,see unit,"Endpoint difference, P4 minus P1"
+data/results/quantitative/material_endpoint_changes.csv,expert,identifier,"ExpertA or ExpertB, the practitioner"
+data/results/quantitative/material_endpoint_changes.csv,feature,category,Named single-record waveform or optical feature
+data/results/quantitative/material_endpoint_changes.csv,repeat,index,"Repetition within its condition; 1/2 for manipulation, 1/2/3 for material trials"
+data/results/quantitative/material_endpoint_changes.csv,unit,metadata,Physical unit of the scalar value
+data/results/quantitative/material_monotonicity.csv,P1,see unit,Feature value for specimen P1
+data/results/quantitative/material_monotonicity.csv,P2,see unit,Feature value for specimen P2
+data/results/quantitative/material_monotonicity.csv,P3,see unit,Feature value for specimen P3
+data/results/quantitative/material_monotonicity.csv,P4,see unit,Feature value for specimen P4
+data/results/quantitative/material_monotonicity.csv,adjacent_signs,sign list,Signs of consecutive feature changes in mechanical order
+data/results/quantitative/material_monotonicity.csv,block,index,"Experimental round, 1 or 2"
+data/results/quantitative/material_monotonicity.csv,expert,identifier,"ExpertA or ExpertB, the practitioner"
+data/results/quantitative/material_monotonicity.csv,feature,category,Named single-record waveform or optical feature
+data/results/quantitative/material_monotonicity.csv,material_order,rule,Measured mechanical order P1<P3<P2<P4
+data/results/quantitative/material_monotonicity.csv,monotonicity,category,increasing/decreasing/flat/mixed under saved floating-point tolerance
+data/results/quantitative/material_monotonicity.csv,numerical_sign_tolerance,see unit,"64*epsilon*max(1,feature magnitudes)"
+data/results/quantitative/material_monotonicity.csv,record_ids,identifier/list,Public record identifier(s) supporting the result
+data/results/quantitative/material_monotonicity.csv,repeat,index,"Repetition within its condition; 1/2 for manipulation, 1/2/3 for material trials"
+data/results/quantitative/material_monotonicity.csv,unit,metadata,Physical unit of the scalar value
+data/results/quantitative/pair_decomposition.csv,amplitude_MSE,see squared_unit,Squared centered-RMS-amplitude difference
+data/results/quantitative/pair_decomposition.csv,amplitude_a,see unit,First waveform centered RMS on common finite support
+data/results/quantitative/pair_decomposition.csv,amplitude_b,see unit,Second waveform centered RMS on common finite support
+data/results/quantitative/pair_decomposition.csv,amplitude_fraction,dimensionless,Amplitude MSE / pair distance squared
+data/results/quantitative/pair_decomposition.csv,block_a,identifier/index,Experimental factor for pair member a
+data/results/quantitative/pair_decomposition.csv,block_b,identifier/index,Experimental factor for pair member b
+data/results/quantitative/pair_decomposition.csv,center_MSE,see squared_unit,Squared center difference
+data/results/quantitative/pair_decomposition.csv,center_fraction,dimensionless,Center MSE / pair distance squared
+data/results/quantitative/pair_decomposition.csv,channel,category,Fx/Fy/Fz in N; Tx/Ty/Tz in N m; wx/wy/wz in deg/s
+data/results/quantitative/pair_decomposition.csv,comparison,category,"expert, repeat or material; matching rules in data_dictionary.md"
+data/results/quantitative/pair_decomposition.csv,delta_amplitude_b_minus_a,see unit,Second minus first common-support centered RMS
+data/results/quantitative/pair_decomposition.csv,delta_mean_b_minus_a,see unit,Second minus first common-support waveform center
+data/results/quantitative/pair_decomposition.csv,distance,see unit,RMS difference of complete recording-mean waveforms
+data/results/quantitative/pair_decomposition.csv,distance_squared,see squared_unit,Mean squared difference of the pair of waveforms
+data/results/quantitative/pair_decomposition.csv,identity_error,see squared_unit,Sum of three MSE terms minus pair distance squared
+data/results/quantitative/pair_decomposition.csv,material_a,identifier/index,Experimental factor for pair member a
+data/results/quantitative/pair_decomposition.csv,material_b,identifier/index,Experimental factor for pair member b
+data/results/quantitative/pair_decomposition.csv,mean_a,see unit,First waveform mean on common finite support
+data/results/quantitative/pair_decomposition.csv,mean_b,see unit,Second waveform mean on common finite support
+data/results/quantitative/pair_decomposition.csv,n_common,count,Finite common phase points
+data/results/quantitative/pair_decomposition.csv,n_cycles_a,count,Number of objects named by this field; not an independent participant count
+data/results/quantitative/pair_decomposition.csv,n_cycles_b,count,Number of objects named by this field; not an independent participant count
+data/results/quantitative/pair_decomposition.csv,n_shared_nonfinite,count,Shared phase keys excluded for nonfinite values
+data/results/quantitative/pair_decomposition.csv,n_union,count,Union of available phase keys
+data/results/quantitative/pair_decomposition.csv,near_zero_tolerance,see unit,"Original 64*epsilon*max(1,magnitudes) conditioning threshold"
+data/results/quantitative/pair_decomposition.csv,pair_id,identifier,Both recording IDs joined by |
+data/results/quantitative/pair_decomposition.csv,phase_ids,dimensionless list,Semicolon-separated phase keys in finite common support
+data/results/quantitative/pair_decomposition.csv,record_a,identifier,First member of a matched recording pair
+data/results/quantitative/pair_decomposition.csv,record_b,identifier,Second member of a matched recording pair
+data/results/quantitative/pair_decomposition.csv,repeat_a,identifier/index,Experimental factor for pair member a
+data/results/quantitative/pair_decomposition.csv,repeat_b,identifier/index,Experimental factor for pair member b
+data/results/quantitative/pair_decomposition.csv,rho,dimensionless,Mean product of two standardized signed shapes on common support
+data/results/quantitative/pair_decomposition.csv,shape_MSE,see squared_unit,Product of amplitudes multiplied by standardized-shape distance squared
+data/results/quantitative/pair_decomposition.csv,shape_RMS_dimensionless,dimensionless,RMS difference of standardized signed shapes on common support
+data/results/quantitative/pair_decomposition.csv,shape_fraction,dimensionless,Shape MSE / pair distance squared
+data/results/quantitative/pair_decomposition.csv,squared_unit,metadata,Squared physical unit of the MSE components
+data/results/quantitative/pair_decomposition.csv,status,category,Original validity/processing or decomposition status; not a measured signal
+data/results/quantitative/pair_decomposition.csv,unit,metadata,Physical unit of the scalar value
+data/results/quantitative/pair_decomposition.csv,weight_rule,rule,Equal weight at each finite common phase point
+data/results/quantitative/record_features.csv,block,index,"Experimental round, 1 or 2"
+data/results/quantitative/record_features.csv,expert,identifier,"ExpertA or ExpertB, the practitioner"
+data/results/quantitative/record_features.csv,feature,category,Named single-record waveform or optical feature
+data/results/quantitative/record_features.csv,material,identifier,Specimen P1/P3/P2/P4
+data/results/quantitative/record_features.csv,n_support,count,Native samples or phase bins as specified in support_kind
+data/results/quantitative/record_features.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/results/quantitative/record_features.csv,repeat,index,"Repetition within its condition; 1/2 for manipulation, 1/2/3 for material trials"
+data/results/quantitative/record_features.csv,source,relative path,Scientific input table used for this result
+data/results/quantitative/record_features.csv,support_kind,rule,Definition of samples/progress bins used for a single-record feature
+data/results/quantitative/record_features.csv,unit,metadata,Physical unit of the scalar value
+data/results/quantitative/record_features.csv,value,see unit,"Value of the named feature, with its own support"
+data/results/quantitative/temporal_decomposition.csv,amplitude_MSE,see squared_unit,Squared centered-RMS-amplitude difference
+data/results/quantitative/temporal_decomposition.csv,amplitude_a,see unit,First waveform centered RMS on common finite support
+data/results/quantitative/temporal_decomposition.csv,amplitude_b,see unit,Second waveform centered RMS on common finite support
+data/results/quantitative/temporal_decomposition.csv,amplitude_fraction,dimensionless,Amplitude MSE / pair distance squared
+data/results/quantitative/temporal_decomposition.csv,block,index,"Experimental round, 1 or 2"
+data/results/quantitative/temporal_decomposition.csv,center_MSE,see squared_unit,Squared center difference
+data/results/quantitative/temporal_decomposition.csv,center_fraction,dimensionless,Center MSE / pair distance squared
+data/results/quantitative/temporal_decomposition.csv,channel,category,Fx/Fy/Fz in N; Tx/Ty/Tz in N m; wx/wy/wz in deg/s
+data/results/quantitative/temporal_decomposition.csv,contrast,category,"middle-early, late-middle or late-early"
+data/results/quantitative/temporal_decomposition.csv,delta_amplitude_b_minus_a,see unit,Second minus first common-support centered RMS
+data/results/quantitative/temporal_decomposition.csv,delta_mean_b_minus_a,see unit,Second minus first common-support waveform center
+data/results/quantitative/temporal_decomposition.csv,distance,see unit,RMS difference of complete recording-mean waveforms
+data/results/quantitative/temporal_decomposition.csv,distance_squared,see squared_unit,Mean squared difference of the pair of waveforms
+data/results/quantitative/temporal_decomposition.csv,expert,identifier,"ExpertA or ExpertB, the practitioner"
+data/results/quantitative/temporal_decomposition.csv,identity_error,see squared_unit,Sum of three MSE terms minus pair distance squared
+data/results/quantitative/temporal_decomposition.csv,material,identifier,Specimen P1/P3/P2/P4
+data/results/quantitative/temporal_decomposition.csv,mean_a,see unit,First waveform mean on common finite support
+data/results/quantitative/temporal_decomposition.csv,mean_b,see unit,Second waveform mean on common finite support
+data/results/quantitative/temporal_decomposition.csv,n_common,count,Finite common phase points
+data/results/quantitative/temporal_decomposition.csv,n_cycles_a,count,Number of objects named by this field; not an independent participant count
+data/results/quantitative/temporal_decomposition.csv,n_cycles_b,count,Number of objects named by this field; not an independent participant count
+data/results/quantitative/temporal_decomposition.csv,n_shared_nonfinite,count,Shared phase keys excluded for nonfinite values
+data/results/quantitative/temporal_decomposition.csv,n_union,count,Union of available phase keys
+data/results/quantitative/temporal_decomposition.csv,near_zero_tolerance,see unit,"Original 64*epsilon*max(1,magnitudes) conditioning threshold"
+data/results/quantitative/temporal_decomposition.csv,phase_ids,dimensionless list,Semicolon-separated phase keys in finite common support
+data/results/quantitative/temporal_decomposition.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/results/quantitative/temporal_decomposition.csv,repeat,index,"Repetition within its condition; 1/2 for manipulation, 1/2/3 for material trials"
+data/results/quantitative/temporal_decomposition.csv,rho,dimensionless,Mean product of two standardized signed shapes on common support
+data/results/quantitative/temporal_decomposition.csv,segment_a,category,Earlier comparison segment
+data/results/quantitative/temporal_decomposition.csv,segment_b,category,Later comparison segment
+data/results/quantitative/temporal_decomposition.csv,shape_MSE,see squared_unit,Product of amplitudes multiplied by standardized-shape distance squared
+data/results/quantitative/temporal_decomposition.csv,shape_RMS_dimensionless,dimensionless,RMS difference of standardized signed shapes on common support
+data/results/quantitative/temporal_decomposition.csv,shape_fraction,dimensionless,Shape MSE / pair distance squared
+data/results/quantitative/temporal_decomposition.csv,squared_unit,metadata,Squared physical unit of the MSE components
+data/results/quantitative/temporal_decomposition.csv,status,category,Original validity/processing or decomposition status; not a measured signal
+data/results/quantitative/temporal_decomposition.csv,unit,metadata,Physical unit of the scalar value
+data/results/quantitative/temporal_decomposition.csv,weight_rule,rule,Equal weight at each finite common phase point
+data/results/quantitative/temporal_record_features.csv,amplitude,deg/s,Centered RMS amplitude of a third-level angular-velocity mean waveform
+data/results/quantitative/temporal_record_features.csv,block,index,"Experimental round, 1 or 2"
+data/results/quantitative/temporal_record_features.csv,channel,category,Fx/Fy/Fz in N; Tx/Ty/Tz in N m; wx/wy/wz in deg/s
+data/results/quantitative/temporal_record_features.csv,expert,identifier,"ExpertA or ExpertB, the practitioner"
+data/results/quantitative/temporal_record_features.csv,material,identifier,Specimen P1/P3/P2/P4
+data/results/quantitative/temporal_record_features.csv,mean,see unit / channel,Equal-cycle recording-mean waveform; temporal feature tables: waveform center
+data/results/quantitative/temporal_record_features.csv,n_common,count,Finite common phase points
+data/results/quantitative/temporal_record_features.csv,n_cycles,count,Accepted cycles contributing to this progress-bin mean
+data/results/quantitative/temporal_record_features.csv,phase_ids,dimensionless list,Semicolon-separated phase keys in finite common support
+data/results/quantitative/temporal_record_features.csv,record_id,identifier,Public recording identifier; see record_manifest.csv
+data/results/quantitative/temporal_record_features.csv,repeat,index,"Repetition within its condition; 1/2 for manipulation, 1/2/3 for material trials"
+data/results/quantitative/temporal_record_features.csv,segment,index/category,Acquisition segment in raw IMU; early/middle/late in temporal results
+data/results/quantitative/temporal_record_features.csv,unit,metadata,Physical unit of the scalar value
+data/results/quantitative/temporal_repeat_decomposition.csv,amplitude_MSE,see squared_unit,Squared centered-RMS-amplitude difference
+data/results/quantitative/temporal_repeat_decomposition.csv,amplitude_a,see unit,First waveform centered RMS on common finite support
+data/results/quantitative/temporal_repeat_decomposition.csv,amplitude_b,see unit,Second waveform centered RMS on common finite support
+data/results/quantitative/temporal_repeat_decomposition.csv,amplitude_fraction,dimensionless,Amplitude MSE / pair distance squared
+data/results/quantitative/temporal_repeat_decomposition.csv,block,index,"Experimental round, 1 or 2"
+data/results/quantitative/temporal_repeat_decomposition.csv,center_MSE,see squared_unit,Squared center difference
+data/results/quantitative/temporal_repeat_decomposition.csv,center_fraction,dimensionless,Center MSE / pair distance squared
+data/results/quantitative/temporal_repeat_decomposition.csv,channel,category,Fx/Fy/Fz in N; Tx/Ty/Tz in N m; wx/wy/wz in deg/s
+data/results/quantitative/temporal_repeat_decomposition.csv,delta_amplitude_b_minus_a,see unit,Second minus first common-support centered RMS
+data/results/quantitative/temporal_repeat_decomposition.csv,delta_mean_b_minus_a,see unit,Second minus first common-support waveform center
+data/results/quantitative/temporal_repeat_decomposition.csv,distance,see unit,RMS difference of complete recording-mean waveforms
+data/results/quantitative/temporal_repeat_decomposition.csv,distance_squared,see squared_unit,Mean squared difference of the pair of waveforms
+data/results/quantitative/temporal_repeat_decomposition.csv,expert,identifier,"ExpertA or ExpertB, the practitioner"
+data/results/quantitative/temporal_repeat_decomposition.csv,identity_error,see squared_unit,Sum of three MSE terms minus pair distance squared
+data/results/quantitative/temporal_repeat_decomposition.csv,material,identifier,Specimen P1/P3/P2/P4
+data/results/quantitative/temporal_repeat_decomposition.csv,mean_a,see unit,First waveform mean on common finite support
+data/results/quantitative/temporal_repeat_decomposition.csv,mean_b,see unit,Second waveform mean on common finite support
+data/results/quantitative/temporal_repeat_decomposition.csv,n_common,count,Finite common phase points
+data/results/quantitative/temporal_repeat_decomposition.csv,n_cycles_a,count,Number of objects named by this field; not an independent participant count
+data/results/quantitative/temporal_repeat_decomposition.csv,n_cycles_b,count,Number of objects named by this field; not an independent participant count
+data/results/quantitative/temporal_repeat_decomposition.csv,n_shared_nonfinite,count,Shared phase keys excluded for nonfinite values
+data/results/quantitative/temporal_repeat_decomposition.csv,n_union,count,Union of available phase keys
+data/results/quantitative/temporal_repeat_decomposition.csv,near_zero_tolerance,see unit,"Original 64*epsilon*max(1,magnitudes) conditioning threshold"
+data/results/quantitative/temporal_repeat_decomposition.csv,pair_id,identifier,Both recording IDs joined by |
+data/results/quantitative/temporal_repeat_decomposition.csv,phase_ids,dimensionless list,Semicolon-separated phase keys in finite common support
+data/results/quantitative/temporal_repeat_decomposition.csv,record_a,identifier,First member of a matched recording pair
+data/results/quantitative/temporal_repeat_decomposition.csv,record_b,identifier,Second member of a matched recording pair
+data/results/quantitative/temporal_repeat_decomposition.csv,repeat,index,"Repetition within its condition; 1/2 for manipulation, 1/2/3 for material trials"
+data/results/quantitative/temporal_repeat_decomposition.csv,rho,dimensionless,Mean product of two standardized signed shapes on common support
+data/results/quantitative/temporal_repeat_decomposition.csv,segment,index/category,Acquisition segment in raw IMU; early/middle/late in temporal results
+data/results/quantitative/temporal_repeat_decomposition.csv,shape_MSE,see squared_unit,Product of amplitudes multiplied by standardized-shape distance squared
+data/results/quantitative/temporal_repeat_decomposition.csv,shape_RMS_dimensionless,dimensionless,RMS difference of standardized signed shapes on common support
+data/results/quantitative/temporal_repeat_decomposition.csv,shape_fraction,dimensionless,Shape MSE / pair distance squared
+data/results/quantitative/temporal_repeat_decomposition.csv,squared_unit,metadata,Squared physical unit of the MSE components
+data/results/quantitative/temporal_repeat_decomposition.csv,status,category,Original validity/processing or decomposition status; not a measured signal
+data/results/quantitative/temporal_repeat_decomposition.csv,unit,metadata,Physical unit of the scalar value
+data/results/quantitative/temporal_repeat_decomposition.csv,weight_rule,rule,Equal weight at each finite common phase point
+data/results/quantitative/temporal_summary.csv,amplitude_decrease_count,count,Records with the indicated sign of centered-RMS amplitude change
+data/results/quantitative/temporal_summary.csv,amplitude_fraction_max,dimensionless,Maximum of per-row values: Amplitude MSE / pair distance squared
+data/results/quantitative/temporal_summary.csv,amplitude_fraction_median,dimensionless,Median of per-row values: Amplitude MSE / pair distance squared
+data/results/quantitative/temporal_summary.csv,amplitude_fraction_min,dimensionless,Minimum of per-row values: Amplitude MSE / pair distance squared
+data/results/quantitative/temporal_summary.csv,amplitude_increase_count,count,Records with the indicated sign of centered-RMS amplitude change
+data/results/quantitative/temporal_summary.csv,center_fraction_max,dimensionless,Maximum of per-row values: Center MSE / pair distance squared
+data/results/quantitative/temporal_summary.csv,center_fraction_median,dimensionless,Median of per-row values: Center MSE / pair distance squared
+data/results/quantitative/temporal_summary.csv,center_fraction_min,dimensionless,Minimum of per-row values: Center MSE / pair distance squared
+data/results/quantitative/temporal_summary.csv,channel,category,Fx/Fy/Fz in N; Tx/Ty/Tz in N m; wx/wy/wz in deg/s
+data/results/quantitative/temporal_summary.csv,contrast,category,"middle-early, late-middle or late-early"
+data/results/quantitative/temporal_summary.csv,delta_amplitude_b_minus_a_max,see unit,Maximum of per-row values: Second minus first common-support centered RMS
+data/results/quantitative/temporal_summary.csv,delta_amplitude_b_minus_a_median,see unit,Median of per-row values: Second minus first common-support centered RMS
+data/results/quantitative/temporal_summary.csv,delta_amplitude_b_minus_a_min,see unit,Minimum of per-row values: Second minus first common-support centered RMS
+data/results/quantitative/temporal_summary.csv,delta_mean_b_minus_a_max,see unit,Maximum of per-row values: Second minus first common-support waveform center
+data/results/quantitative/temporal_summary.csv,delta_mean_b_minus_a_median,see unit,Median of per-row values: Second minus first common-support waveform center
+data/results/quantitative/temporal_summary.csv,delta_mean_b_minus_a_min,see unit,Minimum of per-row values: Second minus first common-support waveform center
+data/results/quantitative/temporal_summary.csv,mean_amplitude_unit,metadata,Unit for center and amplitude
+data/results/quantitative/temporal_summary.csv,n_records,count,Number of objects named by this field; not an independent participant count
+data/results/quantitative/temporal_summary.csv,rho_max,dimensionless,Maximum of per-row values: Mean product of two standardized signed shapes on common support
+data/results/quantitative/temporal_summary.csv,rho_median,dimensionless,Median of per-row values: Mean product of two standardized signed shapes on common support
+data/results/quantitative/temporal_summary.csv,rho_min,dimensionless,Minimum of per-row values: Mean product of two standardized signed shapes on common support
+data/results/quantitative/temporal_summary.csv,same_third_repeat_shape_distance_median,dimensionless,Median Ds across 48 same-third repeat pairs per channel
+data/results/quantitative/temporal_summary.csv,shape_RMS_dimensionless_max,dimensionless,Maximum of per-row values: RMS difference of standardized signed shapes on common support
+data/results/quantitative/temporal_summary.csv,shape_RMS_dimensionless_median,dimensionless,Median of per-row values: RMS difference of standardized signed shapes on common support
+data/results/quantitative/temporal_summary.csv,shape_RMS_dimensionless_min,dimensionless,Minimum of per-row values: RMS difference of standardized signed shapes on common support
+data/results/quantitative/temporal_summary.csv,shape_fraction_max,dimensionless,Maximum of per-row values: Shape MSE / pair distance squared
+data/results/quantitative/temporal_summary.csv,shape_fraction_median,dimensionless,Median of per-row values: Shape MSE / pair distance squared
+data/results/quantitative/temporal_summary.csv,shape_fraction_min,dimensionless,Minimum of per-row values: Shape MSE / pair distance squared
+data/results/quantitative/temporal_summary.csv,shape_unit,metadata,Standardized-shape unit (dimensionless)
+data/results/quantitative/temporal_summary.csv,squared_unit,metadata,Squared physical unit of the MSE components

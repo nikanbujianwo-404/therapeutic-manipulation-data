@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "main_records": 32,
+  "material_trials": 12,
+  "practitioners": [
+    "ExpertA",
+    "ExpertB"
+  ],
+  "specimen_order": [
+    "P1",
+    "P3",
+    "P2",
+    "P4"
+  ],
+  "raw_to_paper_complete": false,
+  "physical_synchronization_verified": false,
+  "repository_url": "REPOSITORY_URL_PENDING",
+  "archive_doi": "ARCHIVE_DOI_PENDING",
+  "data_license": "AUTHOR_DECISION_PENDING",
+  "code_license": "AUTHOR_DECISION_PENDING"
+}
