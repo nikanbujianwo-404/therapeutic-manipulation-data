@@ -4,11 +4,10 @@ Data and analysis code accompanying the manuscript by **Jixian Zheng, Chengdi Ho
 
 This study describes variation in sustained therapeutic manipulation across practitioners, materials, and time. It separates differences between recording-mean cycle waveforms into mean-level, RMS-amplitude, and standardized signed-shape contributions, alongside independently analyzed wrist-shell spatial paths. Same-condition repetitions provide an empirical reference for difference magnitudes.
 
-This release accompanies a manuscript prepared for submission. No acceptance, publication, manuscript DOI, or dataset DOI is claimed.
+This repository provides the measurement data, processed analysis inputs, and analysis code accompanying this study. Download the data packages from the release linked below and follow the instructions in “Download and extraction.”
 
 - Release version: `1.0.0`
-- Repository: **[REPOSITORY_URL — replace before public release]**
-- Data/code archive DOI: **[ARCHIVE_DOI — add only after a real archival record exists]**
+- Repository: https://github.com/nikanbujianwo-404/therapeutic-manipulation-data
 - Data and code reuse permissions: **awaiting author decisions**, separately; see [LICENSE_STATUS.md](LICENSE_STATUS.md).
 
 ## Scope and identifiers
