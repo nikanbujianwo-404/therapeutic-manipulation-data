@@ -7,7 +7,8 @@ This study describes variation in sustained therapeutic manipulation across prac
 This release accompanies a manuscript prepared for submission. No acceptance, publication, manuscript DOI, or dataset DOI is claimed.
 
 - Release version: `1.0.0`
-- Repository: https://github.com/nikanbujianwo-404/therapeutic-manipulation-data
+- Repository: **[REPOSITORY_URL — replace before public release]**
+- Data/code archive DOI: **[ARCHIVE_DOI — add only after a real archival record exists]**
 - Data and code reuse permissions: **awaiting author decisions**, separately; see [LICENSE_STATUS.md](LICENSE_STATUS.md).
 
 ## Scope and identifiers
